@@ -1,0 +1,2220 @@
+﻿Reference Type:  Conference Proceedings
+Record Number: 1040
+Author: A., Arena, A., Bianchini, P., Perazzo, C., Vallati and G., Dini
+Year of Conference: 2019
+Title: BRUSCHETTA: An IoT blockchain-based framework for certifying extra virgin olive oil supply chain
+Conference Name: "Proceedings - 2019 IEEE International Conference on Smart Computing, SMARTCOMP 2019"
+Short Title: BRUSCHETTA: An IoT blockchain-based framework for certifying extra virgin olive oil supply chain
+DOI: 10.1109/SMARTCOMP.2019.00049
+Year Published:2019
+Label: Arena:2019:1
+Keywords: Blockchain
+Food supply chain monitoring
+Hyperledger Fabric
+Performance evaluation
+Smart Agricolture
+Smart Cities
+Abstract: "Urban population is expected to continuously grow in size. The smart city concepts allows to handle the new challenges and issues created by this growth by applying a wide range of technologies that can provide citizens with a better living environment. Smart agriculture will play an important part of smart cities, as a sustainable and high quality food supply chain is crucial to facilitate the grow of human agglomerates. In this context, European laws imposes very strict requirements in the food industry, in order to ensure that food provenance is always guaranteed. Such fine-grained traceability can be only achieved by applying state-of-the-art technologies. In this paper, we present BRUSCHETTA, a blockchain-based application for the traceability and the certification of the Extra Virgin Olive Oil (EVOO) supply chain. EVOO is an emblematic food product for Italy, but it is also one of the most falsified ones. BRUSCHETTA provides a blockchain-based system to enforce the certification of this product by tracing its entire supply chain: from the plantation to the shops. The goal is to enable the final customer to access a tamper-proof history of the product, including the farming, harvesting, production, packaging, conservation, and transportation processes. BRUSCHETTA leverages Internet of Things (IoT) technologies in order to interconnect sensors dedicated to EVOO quality control, and to let them operate on the blockchain. We also provide a support for the correct tailoring of the BRUSCHETTA blockchain system, and we propose a mechanism for its dynamic auto-tuning to optimize it in case of high loads. © 2019 IEEE."
+Notes: Improvement objective of BC integration is to enable new functionality of showing end-to-end certification of extra virgin olive oil products. Information for this certification comes from sensors deployed within farms, factories, and courier’s vans.
+
+Technical problems that BC tries to solve: authenticity of nodes participating in the network, and the integrity of the supply chain information being records. 
+
+This BC network is built using Hyperledger Fabric technology. The deployment is assumed to be cloud-based. There was only one blockchain network being used. 
+
+Stored on the blockchain is the environmental factors that impact the quality of olive and the corresponding olive oil. In other words, sensor data. No logic was deployed on the blockchain. 
+
+Optimization: dynamic auto-tuning mechanism, which monitor the average transaction delay of the blockchain and control the transaction generation rate of IoT devices.
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85070866376&doi=10.1109%2fSMARTCOMP.2019.00049&partnerID=40&md5=6ffbc2b8a78cd3535a21c4e63075d2d7
+https://ieeexplore.ieee.org/document/8784020/
+'File' Atttachments: internal-pdf://0352118606/08784020.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1039
+Author: A., Dawod, D., Georgakopoulos, P.P., Jayaraman and A., Nirmalathas
+Year of Conference: 2019
+Title: Advancements towards Global IoT device discovery and integration
+Conference Name: "Proceedings - 2019 IEEE International Congress on Internet of Things, ICIOT 2019 - Part of the 2019 IEEE World Congress on Services"
+Short Title: Advancements towards Global IoT device discovery and integration
+DOI: 10.1109/ICIOT.2019.00034
+Year Published:2019
+Label: Dawod:2019:1
+Keywords: IoT
+IoT blockchain
+IoT device description
+IoT device discovery
+IoT device integration
+Abstract: "This position paper presents recent results in developing a blockchain-based solution for Global IoT Device Discovery and Integration (GIDDI). GIDDI makes IoT application development more efficient and cost-effective via enabling (1) sharing and reuse of existing IoT devices owned and maintained by different providers, and (2) deployment of new IoT devices that is supported by a revenue generation scheme for their providers. More specifically, this paper proposes a distributed IoT ledger that is specifically designed for managing the metadata needed for GIDDI. This GIDDI Blockchain is IoT-owned (i.e., it is not controlled by any individual or organization) and is IoT-scaled (i.e., it can support the discovery and reuse of millions of IoT devices). In addition to the GIDDI Blockchain, this paper outlines the design of a GIDDI Marketplace that provides the functionality needed for IoT device registration, query, integration, payment and security via the proposed GIDDI Blockchain. Finally, the paper outlines a prototype GIDDI Blockchain implementation and discusses future research in this area. © 2019 IEEE."
+Notes: Advancements Towards Global IoT Device Discovery and Integration
+
+THIS PAPER IS RELEVANT TO MY IOT TESTBED RESEARCH. HAVE A LOOK
+
+Key concepts:
+- Global IoT Device Discovery and Integration (GIDDI): makes IOT application development more cost-effective via allowing sharing and reusing IoT devices, and deploying new IoT devices to generate revenue. 
+
+This paper proposes a distributed ledger that stores metadata needed for GIDDI, I.e.., sharing and incentivising the share of IoT devices. 
+
+Challenges of deploying IOT applications:
+- Must deploy and maintain the necessary IoT devices to collect the necessary information. 
+- The cost of deploying and maintain exceeds the benefits of such IoT applications. 
+No sources were provided for this idea, however. 
+
+Why IoT device reuse is hard:
+- Huge variety of IoT device types, which are owned by different parties
+- Devices come and go without warning
+- No solution for paying for the use of IoT devices (i.e, lack of incentive framework)
+- Security and trust of sharing IOT devices are tricky. 
+
+Some solutions for IoT device sharing / reuse exist, however they are proprietary and support only a small variety => centralised and lack of interoperability.
+
+This paper thus uses blockchain to deal with the centralisation and lack of interoperability between silos. 
+
+This blockchain stores only IoT device metadata, which identify and describe available IoT devices, data they produce, and identify the “device wrappers” needed to access that data. 
+These wrappers are implemented as micro services. 
+
+The use of cryptocurrency and public key security allows IoT device providers to manage access to their devices and receive payment. 
+
+The GIDDI blockchain uses an in-house PoW-based blockchain, which supports a native cryptocurrency called SensorCoin. 
+
+Each block in this GIDDI blockchain stores the following IoT metadata:
+- Device information: identification, location, provider, costs in cryptocurrency, and payments
+- Description of data generated by IoT devices using SSN (Semantic Sensor Network). 
+- Authentication information. 
+All of these metadata are written in RDF. 
+
+Types of transactions supported by GIDDI:
+- Metadata transactions for inserting IoT metadata
+- Business transactions: provide payments for IOT device use by exchanging details for the SensorCoin
+
+#####
+Improvement objective: improving the interoperability of IoT devices, providing an incentive framework for facilitating the ownership and sharing of IoT devices. Improving authentication of devices
+
+Technical problem: centralisation
+
+Affected module: process orchestrator and device discovery, and device authenticator
+
+Where is BC deployed: cloud
+
+What is stored and run on chain? Metadata and authentication information of devices. 
+What runs off-chain? Wrappers to access device data.
+
+Configuration of BC: only one global chain, using an in-house PoW blockchain. No contract. 
+
+Optimisation? None.
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85072771525&doi=10.1109%2fICIOT.2019.00034&partnerID=40&md5=3321d9c28f6842ec32211e7fa05843df
+https://ieeexplore.ieee.org/document/8815688/
+'File' Atttachments: internal-pdf://4087448091/08815688.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1038
+Author: A., Maiti, A., Raza, B.H., Kang and L., Hardy
+Year: 2019
+Title: Estimating service quality in industrial internet-of-things monitoring applications with blockchain
+Journal: IEEE Access
+Short Title: Estimating service quality in industrial internet-of-things monitoring applications with blockchain
+DOI: 10.1109/ACCESS.2019.2948269
+Label: Maiti:2019:1
+Keywords: Blockchain
+cyber-physical systems
+internet of things
+logistics
+p2p network
+smart contract
+Abstract: "Internet of Things (IoT) plays a big role in automating information generation and consumption in industrial monitoring applications. Blockchain can allow this information to be stored in a manner that is both accessible and reliable for the IoT devices to work with. Blockchain has the capability to collect data from IoT devices and store it in a distributed manner that prevents tampering with the data. This paper discusses the use of blockchain to calculate the Service Quality (SQ) in an Industrial IoT for monitoring application. The proposed framework looks at the blockchain as a finite number of fragmented pieces of data corresponding to a specific industrial process. The SQ is expressed as penalties which is the difference between the expected IoT sensor values and the actual sensor data in reported events from the IoT devices. It also moderates the penalty between similar industrial processes based on each other. The moderation allows better understanding of the system functions and identification of specific problems rather than simply recording the sensor data for a single process. Furthermore, this paper analyzes private blockchains for suitability in IIoT and summarizes some key challenges for IoT to be used with blockchain in context of the proposed framework. The paper uses supply chain as a use case scenario for describing the proposed framework and presents results on its technical feasibility. © 2013 IEEE."
+Notes: Estimating Service Quality in Industrial Internet-of-Things Monitoring Applications with Blockchain
+
+RELEVANT TO MY IOT TESTBED PAPER. HAS A LOT OF INTERESTING CONCEPTS AND TERMINOLOGY TO USE.
+
+Key terms:
+- Service Quality (SQ): Difference between the expected IoT sensor values and the actual sensor data in reported events from the IoT devices. SQ usually measures how good the service is.
+- SQ Penalty: measuring how bad the service is. If it is greater than 0, the service is poor. 
+- Asset Tracking: the practice of using low cost, usually battery powered IoT devices to track the location and status of a specific package being transported from one place to another. 
+- Finite Transaction Series (FTS): a fixed set of blocks containing information regarding a specific asset and its attributes corresponding to a process.
+- Process: a series of events, ordered chronologically, associated with an asset that is finite in terms of time. 
+- Asset in blockchain: a logical representation of objects to which an IoT device attach. 
+- IoT device has k sensors, which measures some environment parameters. Each measurement has an upper and lower limit. 
+- Static device ID: put in by manufacturer. 
+- Dynamic device ID: loaded into the device each time it is initiated.
+- Smart Blockchain App (SBA): alternative name for smart contract, responsible for entering data into blockchain and maintaining ownership of logical assets. 
+
+
+This paper introduces a method to measure Service Quality for IIoT with blockchain as a database. 
+
+This paper raises the difference between asset and information. It emphasises that the key to implementing a successful IIoT with BC is the ability to maintain the ownership of an asset and update its associated attributes (i.e., information or metadata). 
+
+The usefulness of blockchain in this work:
+- Transparency: sharing of events and at a related to processes among peer industrial entities.
+- Integrity: data stored on blockchain cannot be altered by any peer
+- Use of smart contracts to automatically record events and provides notifications and feedback to human users
+
+In this approach, sensor devices do not participate as BC nodes. Instead, they send data at fixed interval or in response to events to a gateway. 
+
+The data sent by devices represents different events that move an asset through steps in its process. The set of all blocks containing events associating with a process is called a FTS. By the end of each process, the corresponding FTS is achieved for read-only purposes. 
+
+Each FTS correspond to a Smart Blockchain App. These are on-chain logic that monitors the contain of messages containing sensor values, and detect SQ violations. 
+
+Smart blockchain app in this system has the following functions:
+- Create: create new asset or reinitialise an old IoT device
+- Record: enter new information updating the attributes of an asset
+- Query: essentially key-value look up.
+- Status: determine the status of the FTS that it maintains
+- Burn: un-initialize an asset so that it cannot be updated any more. 
+
+Each time the smart contract detects an anomaly, it calculates a penalty. In the end of the process, it combines all of these penalties to derive the final quality of the process. The interesting point is that the quality of a process is normalised based on the value of similar processes recorded on the blockchain. 
+
+Implementation wise, this work uses BigchainDB, which is a combination of Tendermint blockchain (PoS) and a MongoDB database. 
+
+Smart contract seems to be installed variation rather than on-chained. 
+
+#####
+Improvement object of integration BC: Increase the transparency and integrity of the data for calculating quality of services. Enable the process of calculating quality of services.
+
+Technical problem of integrating BC: Decentralization of cross-organisation process
+
+Affected module: QoS calculation
+
+Where is BC deployed? Cloud
+
+What is stored on-chain? Sensor readings corresponding to the processes of assets. 
+
+What runs on-chain? QoS calculating
+
+What is BC configs? Tendermint, configured to run like PoA blockchain, data structure appears to be UTXO, installed contract. 
+
+Optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074640851&doi=10.1109%2fACCESS.2019.2948269&partnerID=40&md5=a9289b3441e559018e700d493284a410
+https://ieeexplore.ieee.org/ielx7/6287639/8600701/08876654.pdf?tp=&arnumber=8876654&isnumber=8600701&ref=
+'File' Attachments: internal-pdf://4022819576/A-2019-Estimating service quality in industria.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1041
+Author: A.A., Yusuf, D., Kurnia Basuki, S., Sukaridhoto, Y.P., Pratama, F., Bramasta Putra and H., Yulianus
+Year of Conference: 2019
+Title: ArmChain - A Blockchain Based Sensor Data Communication for the Vehicle as a Mobile Sensor Network
+Conference Name: "IES 2019 - International Electronics Symposium: The Role of Techno-Intelligence in Creating an Open Energy System Towards Energy Democracy, Proceedings"
+Short Title: ArmChain - A Blockchain Based Sensor Data Communication for the Vehicle as a Mobile Sensor Network
+DOI: 10.1109/ELECSYM.2019.8901530
+Year Published:2019
+Label: Yusuf:2019:1
+Keywords: Air Quality Measurements
+Blockchain
+Distributed Network
+Internet of Things
+Vehicle as a Mobile Sensor Network
+Abstract: "The Internet of Things (IoT) is widely used in various aspects such as industry, manufacturing, health, agriculture and others. One of the uses of IoT is as an environmental monitoring system. In its application, IoT-based environmental monitoring systems are composed of one or more sensors placed in various locations and connected to each other using certain protocols. The problem arises when thousands of IoT devices connected together in one network and using the server-client connection model which raises several works in the synchronization process and access control management. This kind of network depends on a server as the center of control management that work as storing and distributing data from the sensor so that any data comes from the server is considered correct. To overcome this problem, it is proposed an IoT system that uses Blockchain technology which is a distributed data structure that forms blocks that do not require central authority and verification from third parties. From the experiments conducted can be evaluated that blockchain communication is much slower compared to MQTT communication protocol in terms of speed. The data transmission between node is measured with an average delay of 200ms. This system also visualizes data in graph with a high mobility data collection using vehicle so that it can be used to be an alternative of public participatorial measurement. © 2019 IEEE."
+Notes: ArmChain - A blockchain based sensor data communication for vehicle as a mobile sensor network
+
+Key terms:
+- VaaMSN: Vehicle as a Mobile Sensor Network. 
+
+In this paper, a VaaMSN is a vehicle carrying air quality sensors. This vehicle compile sensor data into JSON, and send those JSON objects via 4G-LTE connection to the blockchain, using JSON-RPC.
+
+InfluxDB streams the data from the blockchain, push to Grafana, and finally display it on a dashboard. 
+
+#####
+Improvement object: decentralised storage and management of sensor data, to remove the bottle neck of centralised models. 
+
+Technical problem: centralisation.
+
+Affected module: sensor database
+
+Where is BC deployed? Cloud
+
+What is stored? Sensor data.
+
+What run on chain? Nothing
+
+Configuration: Appear to be an unnamed PoA protocol. 
+
+Optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075832712&doi=10.1109%2fELECSYM.2019.8901530&partnerID=40&md5=40f99c0f899e3d96d846c88dc6ec7609
+https://ieeexplore.ieee.org/document/8901530/
+'File' Atttachments: internal-pdf://1395235128/08901530.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1042
+Author: A.P., Junfithrana, E., Liani, M.Z., Suwono, D., Meldiana and A., Suryana
+Year of Conference: 2019
+Title: "Rice donation system in orphanage based on internet of things, raspberry-pi, and blockchain"
+Conference Name: "Proceedings - 2018 4th International Conference on Computing, Engineering, and Design, ICCED 2018"
+Short Title: "Rice donation system in orphanage based on internet of things, raspberry-pi, and blockchain"
+DOI: 10.1109/ICCED.2018.00053
+Label: Junfithrana:2019:1
+Keywords: Blockchain
+Donation
+Internet Of Things
+Orphanage
+Raspberry-pi
+Abstract: "IoT utilization in daily lives is very potential and can be applied in various fields, unfortunately the implementation in the social field still lacking. The large number of orphanages in Indonesia caused information distribution not easily available, however donors find it difficult to get the right information about food reserves, especially rice stock in orphanages. This paper proposes an IoT-based system where rice stocks in orphanages can be detected by Raspberry pi which is connected to sensors, data information from raspberry-pi connected to the network that can be accessed and monitored by mobile applications. This application designed for service providers, donors and rice suppliers. Donors send rice through financial transactions with service providers, and rice suppliers will ship items to the orphanage. Blockchain technology is applied to all parties in order to be transparent and reduce transaction manipulation. © 2018 IEEE."
+Notes: Rice donation system in orphanage based on internet of things, RPi, and Blockchain
+
+The idea of this paper is using Raspberry Pi to monitor the weight of the rice container automatically and send such data to the blockchain network. Donors and suppliers then can use the information stored on the blockchain to orchestrate the supply. 
+
+The network is based on Ethereum. This blockchain stores all of the IoT data generated by the device. 
+
+##### 
+Improvement objective: transparency and integrity of the information
+
+Technical problem: decentralising the business process and automate it. 
+
+Where is BC deployed? Cloud
+
+What is stored? Rice stock level
+
+What runs on chain? Contracts between donors and suppliers
+
+Configuration? Basic public Ethereum network. 
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065250115&doi=10.1109%2fICCED.2018.00053&partnerID=40&md5=6a9a4eef6679b1bc6f4b48163e412aa1
+https://ieeexplore.ieee.org/document/8691118/
+'File' Atttachments: internal-pdf://1504569917/08691118.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1043
+Author: F., Kandah, J., Cancelleri, D., Reising, A., Altarawneh and A., Skjellum
+Year of Conference: 2019
+Title: "A hardware-software codesign approach to identity, trust, and resilience for IoT/CPS at scale"
+Conference Name: "Proceedings - 2019 IEEE International Congress on Cybermatics: 12th IEEE International Conference on Internet of Things, 15th IEEE International Conference on Green Computing and Communications, 12th IEEE International Conference on Cyber, Physical and Social Computing and 5th IEEE International Conference on Smart Data, iThings/GreenCom/CPSCom/SmartData 2019"
+Short Title: "A hardware-software codesign approach to identity, trust, and resilience for IoT/CPS at scale"
+DOI: 10.1109/iThings/GreenCom/CPSCom/SmartData.2019.00191
+Year Published:2019
+Label: Kandah:2019:1
+Keywords: Blockchain
+IoT
+RF-DNA Fingerprinting
+Trust management
+Abstract: "Advancement in communication technologies and the Internet of Things (IoT) is driving adoption in smart cities that aims to increase operational efficiency and improve the quality of services and citizen welfare, among other potential benefits. The privacy, reliability, and integrity of communications must be ensured so that actions can be appropriate, safe, accurate, and implemented promptly after receiving actionable information. In this work, we present a multi-Tier methodology consisting of an authentication and trust-building/distribution framework designed to ensure the safety and validity of the information exchanged in the system. Blockchain protocols and Radio Frequency-Distinct Native Attributes (RF-DNA) combine to provide a hardware-software codesigned system for enhanced device identity and overall system trustworthiness. Our threat model accounts for counterfeiting, breakout fraud, and bad mouthing of one entity by others. Entity trust (e.g., IoT devices) depends on quality and level of participation, quality of messages, lifetime of a given entity in the system, and the number of known 'bad' (non-consensus) messages sent by that entity. Based on this approach to trust, we are able to adjust trust upward and downward as a function of real-Time and past behavior, providing other participants with a trust value upon which to judge information from and interactions with the given entity. This approach thereby reduces the potential for manipulation of an IoT system by a bad or byzantine actor. © 2019 IEEE."
+Notes: A hardware-software code sign approach to identity, trust, and resilience for IoT/CPS at scale
+
+Quiet tiresome paper to read. Hate this one. 
+
+Key terms:
+- RF-DNA: Radio Frequency Distinct Native Attribute facilitates the identification of wireless transmitters by exploiting PHY layer characteristics. It can be used to provide a Physically Unclonable property for IoT devices. 
+- Trust: assurance between two devices that the information being shared can be used with confidence that it is accurate. Trust in this work rely on quality and level of participation, quality of messages, lifetime of a given entity, and the number of known non-consensus messages sent by that entity. 
+- Breakout Fraud: devices can attack the system by maintaining a period of good behaviour that yields a high level of trust, then start injecting the network with invalid information. 
+- Bad mouthing: malicious devices incorrectly report low trust values of peers in the network, thus enabling them to gain higher trust values compared to their peers. 
+- Counterfeiting / impersonation: availability of cheep knockoffs of big brands. 
+
+This work aims to combine strong identity based on lightweight blockchain technology and RF-DNA fingerprints to produce a secure, scalable, and trustworthy environment for IoT devices. In other words, this is a trust management system based on BC and RF-DNA. 
+
+Assertions of the authors:
+- The system must be able to identify accurately initially and over time to establish and maintain useful measures of trust.
+- Hardware-Software code sign is essential to achieve strong device identity
+- Blockchain provides an important architectural component for IOT trust management because of their immutability, decentralisation, integrity, and DDoS resistance. 
+
+Some benefits of BC sought by the work:
+- Tamper-proofing
+- Consistency between devices
+- Timeliness
+
+The design uses two levels of BC networks:
+- Cluster blockchain: maintained by clusters of devices. There are multiple cluster blockchains in the system. This blockchain uses a less demanding platform, allowing blocks to be generated and added quickly. 
+- Global blockchain: IoT gateways add the data from their local cluster to the global blockchain. 
+
+When reaching a certain threshold, the cluster blockchain would be pushed to a gateway, so that the gateway can upload this cluster chain data to the global chain. Then, the cluster would forget the previous chain and start constructing a new one. 
+
+Both of these blockchains store the trust factors and values of devices that the network knows. 
+
+It is quite unclear who does the calculation of new trust value, however. 
+
+#####
+Improvement objective: integrity of the trust value
+
+Technical problem to solve: Prevent the tampering of the calculated trust value. 
+
+Affected module: trust manager
+
+Where is BC deployed? Two levels, edge and cloud
+
+What is stored on chain? Trust value of devices, comprising of four different factors.
+
+What runs on chain? Nope.
+
+Configuration of BC? N/A
+
+Any optimisation? The use of multiple blockchain, with throwaway blockchain at the edge to improve the overall throughput of the system.
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074841556&doi=10.1109%2fiThings%2fGreenCom%2fCPSCom%2fSmartData.2019.00191&partnerID=40&md5=6150bb5ed09aa5544f93bdb4f36f346e
+https://ieeexplore.ieee.org/document/8875291/
+'File' Atttachments: internal-pdf://2306743118/08875291.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1044
+Author: F.M., Bencic, P., Skocir and I.P., Zarko
+Year: 2019
+Title: "DL-Tags: DLT and Smart Tags for Decentralized, Privacy-Preserving, and Verifiable Supply Chain Management"
+Journal: IEEE Access
+Short Title: "DL-Tags: DLT and Smart Tags for Decentralized, Privacy-Preserving, and Verifiable Supply Chain Management"
+DOI: 10.1109/ACCESS.2019.2909170
+Label: Bencic:2019:1
+Keywords: Blockchain
+distributed ledger technology
+supply chain management
+Abstract: "Supply chain management enhanced by the Internet of Things (IoT) solutions integrate special tags (e.g., RFID, NFC, and QR-codes) with products to create Smart Tags, in addition to storing supplemental information about a product, which is also used to track products during their lifecycle. However, a product consumer has to implicitly trust the Smart Tag creator and other stakeholders within the supply chain that they are providing authentic data within a product's tag. The DL-Tags solution steps into this environment to offer a decentralized, privacy-preserving, and verifiable management of Smart Tags during a product's lifecycle. The solution is based on distributed ledger technology (DLT) and uses the Ethereum blockchain to mediate interactions between the stakeholders during a product's exchange process. By reaching a consensus on the product's description and state logged on the blockchain, all involved stakeholders and product consumers can verify the product's authenticity without revealing their identity. The paper describes the DL-Tags solution and includes a cost analysis of all implemented transactions on the Ethereum blockchain. The proposed solution provides evidence of the product's origin and its journey across the supply chain while preventing tag duplication and manipulation. It is among the first documented practical solutions using DLT and IoT for supply chain management, which is designed to be distributed ledger agnostic. © 2013 IEEE."
+Notes: DL-Tags: DLT and Smart Tags for Decentralized, Privacy-Preserving, and Verifiable Supply Chain Management
+
+Key terms:
+- Digital Product: A product enhanced with its smart tag. 
+- Smart tags are typically dynamic QR code printed with special ink that changes due to specific environmental conditions such as temperature, humidity, and light intensity. More generally, it stores some additional information about the product that can be revealed when we read the tag. 
+
+The smart tags can be issued by a centralized system. The drawback of such a system is that the product consumer must trust the platform that they are providing authentic data about a product without tempering with its smart tags. 
+
+Benefits of using BC:
+- Forcing stakeholders to reach consensus on the information stored in Smart Tags, so that they cannot blame former stakeholders in the product lifecycle regarding unacceptable facts stored in a smart tag. 
+- Provenance: end consumer can verify whether a product belongs to a certain brand (i.e., not counterfeit). The record of the product as it moves across the supply chain can also be maintained.
+
+Four specific challenges solved by DL-Tags:
+- Manipulation of existing Smart Tags data
+- Duplication and reuse of existing Smart Tags
+- Ambiguous chain of responsibility when a product is paid for but never delivered, sent by never acknowledged upon delivery, damaged, etc. 
+- Creation of non-authentic Smart Tags
+
+The public blockchain acts as a proof of existence storage, keeping hashes of product-related data exchanges. This is used to verify the integrity of the actual data. 
+
+In December 2018, a producer would pay around 5$ for logging a product creation event, “which is acceptable for high end products”. 
+
+DL-Tags deals with counterfeit tags by keeping hash of smart tag information in the blockchain. Thus, when consumers scan the tag, they can compare the hash wth the one stored on blockchain and realised that they have the fake tags. 
+
+DL-Tags deals with tag duplication by forcing retailers to publish on the blockchain that the smart tag has been sold and transferred to a different owner. 
+
+DL-Tags also require stakeholders to sign smart contract announcing the shipping and reception of tagged product, thus dealing with the ambiguous chain of responsibility. 
+
+DL-Tag is deployed on a public Ethereum network. 
+
+How it works:
+- Every product tagged with a smart tag will have its digest stored on the blockchain. 
+- Every product must have an owner. 
+- Each owner must pass the ownership to the next stakeholder in the product item lifecycle. 
+- Each stakeholder needs to confirm the receipt of the product item using voting.
+- Only one issuing entity can issue smart tags
+
+#####
+Improvement objective: Security: non-repudiation, authenticity, and integrity. 
+
+Technical problem: decentralisation of process and data
+
+Where is BC deployed? Cloud
+
+What is stored on-chain? Hashes of produce record
+
+What runs on chain? Exchange of ownership
+
+Conf of BC? Just normal Ethereum
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065968921&doi=10.1109%2fACCESS.2019.2909170&partnerID=40&md5=e55dd23e33bbccdd748bca4dfd7d77c9
+https://ieeexplore.ieee.org/ielx7/6287639/8600701/08684204.pdf?tp=&arnumber=8684204&isnumber=8600701&ref=
+'File' Attachments: internal-pdf://3244173420/F.M-2019-_DL-Tags_ DLT and Smart Tags for Dece.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1045
+Author: G., Ali, N., Ahmad, Y., Cao, M., Asif, H., Cruickshank and Q.E., Ali
+Year: 2019
+Title: Blockchain based permission delegation and access control in Internet of Things (BACI)
+Journal: Computers and Security
+Short Title: Blockchain based permission delegation and access control in Internet of Things (BACI)
+DOI: 10.1016/j.cose.2019.06.010
+Label: Ali:2019:1
+Keywords: Access control
+Blockchain
+Internet of Things
+Permission delegation
+Platform verification
+Abstract: "Access control with permission delegation mechanism allows fine granular access to secure resources. In the literature, existing architectures for permission delegation and access control are either event-based or query-based. These previous works assume a single trusted delegation service, which however is likely biased or fails to service. Also, they fail to allow users to verify delegation service operations, as such cannot be directly applied to IoT (Internet of Things) due to low power, low-bandwidth, ad-hoc and decentralized nature. This paper proposes a novel decentralized architecture for permission delegation and access control for IoT application, with demands on event and query base permission delegation. We further apply Blockchain (BC) technology to make delegation services secure, trusted, verifiable and decentralized. We investigate our proposed approach in Simple PROMELA INterpreter (SPIN) model checker using PROMELA (Process Meta Language). The “Platform Verification”, “Delegation”, “Mutual Exclusion” properties written in Linear Temporal Logic (LTL) are also verified against the PROMELA model. © 2019 Elsevier Ltd"
+Notes: Blockchain based permission delegation and access control in Internet of Things
+
+
+Key terms:
+- Access control: mechanism that limits the operations or activities of a legitimate user (i.e., authentication?)
+- Delegation: the process for assigning temporary permissions to a user. It usually happens in response to either a query or an event. 
+- Delegatee: the person who receives the permission.
+- IoT devices: limited processing power and memory, part of a wireless sensor network. Each device possesses an ID and a pair of encryption keys. 
+- User device: smart phones, laptops, PC, etc. 
+
+Challenges in IoT access control with delegation service:
+- Large number of devices
+- Lack of trust between devices
+- Delegation operations are performed in a distributed fashion because each user has a certain control on this own permission delegation. 
+
+The existing literature uses a single trusted delegation service for enforcing authorisation rules. This creates a change of bias and presents a single point of failure. 
+
+This paper uses BC to provide availability and decentralisation. 
+
+The proposed system creates a smart contract for each registered IoT device. This smart contract stores permission delegations. 
+
+Data structure of the per-device smart contract:
+- Delegation information: delegator ID, delegates ID, permission fields (i.e., access, read, read/write)
+- Device ID and hash values. 
+
+Functions of the smart contract:
+- Permission Activation Algorithm
+- Permission Deactivation Algorithm
+- Query-based Permission Delegation Algorithm
+- Policy Creation Algorithm
+- Permission Revocation Algorithm,
+
+This paper uses a private Hyperledger Fabric network. It allows only a subset of dedicated nodes to write to the blockchain. The blockchain is expected to be maintained by Road Side Units. 
+
+In the design of this work, there is a particular Blockchain Manager component that handles the verification of access policies, and submit transactions to the blockchain network on behalf of other nodes. 
+
+#####
+
+Improvement objectives of BC integration: improve availability and decentralisation of the delegation service. Tamper-proofing storage might be a contributing goal as well. 
+
+Technical problem: decentralisation. 
+
+Affected module: authorisation delegation service
+
+Where is BC? Fog node
+
+What is stored on chain? Permission delegations of devices. Each device has a smart contract. 
+
+What runs on chain? Nope
+
+Conf of BC? One blockchain, using Hyperledger Fabric. 
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85068480555&doi=10.1016%2fj.cose.2019.06.010&partnerID=40&md5=865155c993c6ef2e0543084c28917391
+https://pdf.sciencedirectassets.com/271887/1-s2.0-S0167404819X0005X/1-s2.0-S0167404819301208/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGIaCXVzLWVhc3QtMSJGMEQCIF9HkGNgxzWNcWOVgq9RynbEWHOQKTuCUqFq6%2FqfLQMaAiBx6%2FthXl8h8d8R8YXg2gbzKHvR3TXwHIzbWIetkQpA%2BCq9Awj7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDA1OTAwMzU0Njg2NSIMwPaMMmqUdfXAduBrKpEDF%2BdqPk2Zb1JK8LJvlC0aMVPQkjgMc7gh6MZu0ehM5kqrYf1jyxkUNnJ9VdUmUBlY4H0Yvt4dbeJ1%2BIizdcLTxSe9lh%2FzbkYYFGaSXvfmvnxQPNw2IgBg%2BlOHMF%2Bec1WaJPMQHmwZsyl4oOCLvjGvOs2E154cizTGawPZXlZDT1jOi2z7tHaGn1vEgZxTqAVr7bgdJTOQF9AxLU4Xpa4%2Bf8vCYOV4revvaEVR%2F6ZhWxzpFKKZnC6VorpsXlBrxeIMDQwv%2FO6tNpaOrYwQG%2F0l60tBtCz5SC2FH2I1NueZKSs1fYE89UaDHBj%2FXNSspNyg4cJN1USY%2FuqfWWe3PfH3hYa3FbFyufTsNvqVsVDq19Clki9QyNg30OALm40vUSa7aA%2F6MLXc1K4oOzquUc7kFVikATwL2NGKRneln3Liu7ZHtErYQh5vL3ec1eUzAlXzNvKXv8gxAzocLHaA7ENoeoBn8rvuef1ona55Z2IBgZ%2BpyBZvrD8kE3cadCo4CiTCjcgXKx0Q7QdDY12q7LZ%2FQNgw9%2BaZ%2BAU67AF%2F5rFBsS8EfDdeQ649BsClqYsWH7%2F7Di8P6iKJX2gBaeQrjyQpFXRA9i4lp4lpjgIErPFGfwx2rLFnw8QoWiiuAAu%2BI992d09tZw1m6J0aFSGlJdB6yzY2KtLgbRShIyBSA9BP4N4MHgXqD9x7MKphasFfrwf2DmPJGSlsiwHEDb37VCLqxLPWtY7Ng2qhgg0mN0463NPqFdtymZQvE1%2BENeJUCmnN%2FSh%2FxLkf90eLaxQ8y4enqrOojfSAuxzYAmwzVMWn5pyKcFs%2Bm2BTCSLeIO68gXdoOI0wByOH0il9vp13UgcdMHQS%2FKAqQg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200709T024127Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY6KB65T7G%2F20200709%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=511a91492439afb6fd4bd3ed3ae82f415f310b3932487bbc389e14d44e3b7674&hash=c8e8cc303f8f49c3d4c0d86cba736037ee54029f1f9b0c420e2dfbcfab3e7a5e&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0167404819301208&tid=spdf-f56fb0f5-eeed-4e52-9f96-0f58df560d3d&sid=61b602e14859f84f0679e431df325b728027gxrqa&type=client
+'File' Attachments: internal-pdf://3692101153/G-2019-Blockchain based permission delegation.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1046
+Author: G., Qiao, S., Leng, H., Chai, A., Asadi and Y., Zhang
+Year of Conference: 2019
+Title: Blockchain Empowered Resource Trading in Mobile Edge Computing and Networks
+Conference Name: IEEE International Conference on Communications
+Short Title: Blockchain Empowered Resource Trading in Mobile Edge Computing and Networks
+DOI: 10.1109/ICC.2019.8761664
+Label: Qiao:2019:1
+Abstract: "This paper proposes a new device-to-device edge computing and networks (D2D-ECN) framework which facilitates low-latency execution of real-time Internet-of Things applications through computation offloading with minimal overhead. Our framework accounts for key challenges of D2D-ECN in terms of the efficiency of the resource management and the resulting security concerns caused by lacking trustworthy between task owners and resource providers. In particular, we propose to use a blockchain-empowered framework for implementing resource trading and task assigment as the smart contracts. However, the existing Proof-of-Work (PoW) is impractical for the resource-constrained IoT devices due to high computational complexity of the mining process. Thus, we present a reputation-based consensus mechanism called proof-of-reputation (PoR), where the device with the highest reputation score is responsible for packaging the resource transactions and reputation records in the blockchain. Furthermore, we evaluate the reputation score of each device according to the current computation performance and history reputation. Security, feasibility analysis and numerical results show that our proposed computation offloading scheme can be deployed in the decentralized D2D-ECN system safely and effectively. © 2019 IEEE."
+Notes: Blockchain Empowered Resource Trading in Mobile Edge Computing and Networks
+
+Key terms:
+- Device-to-device edge computing and networks (D2D-ECN) provides a flexible edge computing platform for IoT devices to share their computation and communication resources. In this scheme, task owner can offload the computation tasks to nearby IoT devices with available computation resources. Data transmission latency can also be reduced by purchasing nearby idle communication resources. 
+- Local Base Station (LBS)
+
+This work employs a cryptocurrency called resource coin to incentive IoT devices participating in the D2D-ECN (essentially local market place for spare computation and networking resource)
+
+Workflow of blockchain-based resource trading and task assignment:
+- System initialisation and credibility assessment: Trusted base station grants the device an ID, a digital certificate, a pair of keys, and a wallet address for trading coin. The device also needs to use the D2D communication links to download the latest transaction list. 
+- Resource trading with smart contract: the trusted base station constructs smart contracts based on resource demand of task owner, resources available by resource providers, and some constraints into smart contract, which would be automatically implemented when a necessary waiting time elapses.
+- Calculate and update reputation score: on-chain smart contract deal with task assignment based on the smart contract representing resource trading request. Task owner is responsible for rating the resource provider when receiving the computation result. 
+- Payment using resource coin: Task owner uses their private key to unlock some of their UTXO (i.e., coin) to transfer to the wallet of resource provider
+- Broadcast trading record and reputation score: Task owner broadcast the entire transactions with their signature to all devices within the D2D-ECN. This transaction includes the resource trading records and updated reputation scores. 
+- Perform Proof of Reputation (PoR) consensus process: devices with the highest reputation constructs the next block and broadcast, similar to PoW scheme. 
+
+3 roles in the D2D-ECN:
+- Task owner
+- Spectrum resource provider (SP)
+- Computation resource provider (CP)
+
+On-chain logic:
+- Resource trading: find optimal resource pricing and allocation. This is done by a two-stage Stackelberg game. 
+- Task assignment: find the optimal tradeoff between service latency and decision making time. 
+- Reputation evaluation
+
+The resource trading smart contract represents an individual trade request and response. It stores
+- The amount of resources requested
+- The amount of resources available (announced by providers)
+- Some constraints, such as maximum and minimum price per unit
+- Time stamp
+- List resource providers with highest reputation score. 
+
+#####
+Improvement objective: enable the ownership and trading of resources
+
+Technical problem: decentralisation
+
+Affected modules: reputation calculator, pricing calculator, business process orchestrator
+
+Where is BC deployed? Edge
+
+What is stored on BC? Reputation score of resource providers, I.e., devices.
+
+What runs on BC? Resource pricing and allocation logic, task assignment logic, and reputation management logic. 
+
+Configurations of BC? Nope
+
+Optimisation: Proof-of-Reputation to reduce the resource demand of running BC at the edge.
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85070188650&doi=10.1109%2fICC.2019.8761664&partnerID=40&md5=542a534097712e126bb877bb9cf4d4b9
+https://ieeexplore.ieee.org/document/8761664/
+'File' Atttachments: internal-pdf://2027907669/08761664.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1015
+Author: G., Spathoulas, N., Giachoudis, G.-P., Damiris and G., Theodoridis
+Year: 2019
+Title: Collaborative blockchain-based detection of distributed denial of service attacks based on internet of things botnets
+Journal: Future Internet
+Short Title: Collaborative blockchain-based detection of distributed denial of service attacks based on internet of things botnets
+DOI: 10.3390/fi11110226
+Label: Spathoulas:2019:1
+Keywords: Agents
+Blockchain
+Botnets
+DDoS
+Detection
+IoT
+Security
+Abstract: "Internet of Things is one of the most significant latest developments in computer science. It is common for modern computing infrastructures to partially consist of numerous low power devices that are characterized by high diversity in both hardware and software. Existing security models, approaches and solutions are not able to sufficiently protect such systems. In this paper we propose the use of lightweight agents installed at multiple internet of things (IoT) installations (e.g., smart-homes), in order to collaboratively detect distributed denial of service (DDoS) attacks conducted by the use of IoT devices botnets. Specifically, agents exchange outbound traffic information in order to identify possible victims of DDoS attacks. This information exchange is governed by a blockchain smart contract, that ensures the integrity of both the procedure and the information. A simulation of the operation of the proposed methodology has been conducted in order to evaluate both its detection efficiency and its resilience against malicious agents that aim to falsify results. © 2019 by the authors."
+Notes: Collaborative Blockchain-Based Detection of Distributed Denial of Service Attacks Based on Internet of Things Botnets
+
+This paper proposes an agent based approach to detect DDoS attacks. These agents are installed on gateways at different sites of IoT installations and collaborate with each other via blockchain to exchange traffic information and reach consensus. 
+
+The main metric that agents use for traffic measurement is the rate of packets leaving the network towards remote hosts. By exchanging this information, the agents can determine both the victim of DDoS attack and the site of IoT installation that has been infected and participating in the botnet. 
+
+Reaching consensus on detecting DDoS attack:
+- Every agent check if the packet rate of the busiest host of a specific path-message, is at least twice that of the second busiest host. The busiest host is thus a candidate victim. 
+- All of the busiest hosts identified in different path-messages shared by agents are concatenated. The one with the highest detection ratio is elected as the global candidate victim. 
+- If the global candidate victim is the same for at least three rounds, then that host is identified as probable DDoS victim and an alert is produced. 
+
+The agent themselves can be taken by malicious users or be malicious themselves. Thus, blockchain is used to ensure the integrity of both the process and the exchanged data, without relying on trusted third party. 
+
+Smart contracts in this work have three basic functionality:
+- Control the generation of path-message to collect network metrics from agents
+- Validate and blacklist malicious agents
+- Handles the calculation and detection of DDoS attacks. 
+
+
+#####
+Improvement objective: security in terms of integrity of data and process
+
+Technical problem: decentralisation of security operation
+
+Affected module: DDoS detector
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Network metrics for DDoS detection.
+
+What runs on chain? Logic to operate DDoS detection scheme. 
+
+Configuration of BC? Nope
+
+Optimisation now BC? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075351570&doi=10.3390%2ffi11110226&partnerID=40&md5=762c7557dc9615e05f5b40303b421947
+https://res.mdpi.com/d_attachment/futureinternet/futureinternet-11-00226/article_deploy/futureinternet-11-00226.pdf
+'File' Attachments: internal-pdf://1376710094/G-2019-Collaborative blockchain-based detectio.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1047
+Author: G., Zhang and J., Xie
+Year of Conference: 2019
+Title: Blockchain-enabled security-aware applications in home internet of thing
+Conference Name: "Proceedings - 2019 International Conference on Communications, Information System, and Computer Engineering, CISCE 2019"
+Short Title: Blockchain-enabled security-aware applications in home internet of thing
+DOI: 10.1109/CISCE.2019.00130
+Label: Zhang:2019:1
+Keywords: Blockchain
+Internet of Things security
+Optimized model
+Abstract: "Data security and privacy protection in the Internet of Things (IoT) have attracted wide attention, especially in private scenarios, such as Home Internet of Things (HIoT). Data de-centralization and mature encryption technology based on blockchain technology provide a proper security guarantee for HIoT. However, common blockchain technology consensus algorithm consumes a lot of computing resources of devices, and it is easy to cause network congestion in LAN due to the size of each transaction and transactions' frequently spread. Just Blockchain Storage Model (JBSM) means every blockchain node in the network stores all of the transaction data that launched in the whole blockchain network, there is no doubt that JBSM consumes a lot of storage resources. In this paper, we propose a Blockchain and Centralized Storage Model (BCSM) for HIoT, which reduces the network bandwidth occupied by transaction data and increases the speed of transaction verification by reducing the size of transaction data. The model consists of three parts: HIoT, Blockchain Network and Cloud Storage Server. This paper analyses how BCSM improves transaction efficiency. Finally, through the simulation experiment on Tencent BaaS, the model is compared with the JBSM, which shows the method in this paper not only has the data security characteristic endowed by the blockchain but also improves the transaction efficiency to a certain extent. © 2019 IEEE."
+Notes: Blockchain-enabled Security-Aware applications in Home Internet of Things
+
+Key terms:
+- Home Internet of Things (HIoT)
+- Community Blockchain Network (CBN): connect home node in a small area to form the whole community blockchain network. 
+
+This work proposes that each family in the community runs a blockchain node to validate transactions and do the mining. This work leverages cloud storage server to reduces the pressure on these blockchain nodes. 
+
+Each home in the HIoT consists of some typical devices, such as smart meters, smart air conditioning and family medical equipments. Home device administrator maintains a list of identities of all the devices in the home and the permissible actions on them. These administrators run administrator devices, which participate in the community blockchain network. 
+
+This administrative node also handles the authorisation of devices, in terms of whether they can read or write data. 
+
+Community blockchain network is intended to be used to related families such as relatives for families that live close to each other. This blockchain is not open to the outside world. 
+
+This community blockchain network seems to use PoW. 
+
+After receiving a certain amount of data, the blockchain node encrypt them with the user’s public key and send them to the cloud storage. The cloud node then returns the data storage ID. This ID is then broadcasted to the community blockchain network. 
+
+The data sent to the cloud is encrypted with the public key of the data owner. 
+
+Thus, we can think that the community blockchain network maintains what is similar to proof-of-existence of data. However, it stores only the cloud data ID (URL?) instead of the hash. From this point of view, we can also consider the blockchain to be a registry of data entries on a remote cloud. 
+
+#####
+Improvement objective: improve the security of the system, in terms of data integrity and device authorisation. 
+
+Technical problem: centralization of control over smart home data.
+
+Affected module: data registry
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Pointer to the data entries
+
+What runs on chain? Nope
+
+Conf of BC? N/A
+
+Any optimisation? Store pointer instead of full data item. Instead, the data items are offloaded to the cloud storage.
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85071908190&doi=10.1109%2fCISCE.2019.00130&partnerID=40&md5=5d28fe631358dbd937a630e8a9f2efec
+https://ieeexplore.ieee.org/document/8805968/
+'File' Atttachments: internal-pdf://3080593843/08805968.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1048
+Author: H., Cui, Z., Chen, Y., Xi, H., Chen and J., Hao
+Year of Conference: 2019
+Title: IoT data management and lineage traceability: A blockchain-based solution
+Conference Name: "2019 IEEE/CIC International Conference on Communications Workshops in China, ICCC Workshops 2019"
+Short Title: IoT data management and lineage traceability: A blockchain-based solution
+DOI: 10.1109/ICCChinaW.2019.8849969
+Year Published:2019
+Label: Cui:2019:1
+Keywords: Blockchain
+Data Management
+Internet of Things (IoT)
+Privacy
+Abstract: "The Internet of Things is stepping out of its infancy into full maturity, requiring massive data processing and storage. Unfortunately, because of the unique characteristics of resource constraints, short-range communication, and self-organization in IoT, it always resorts to the cloud or fog nodes for outsourced computation and storage, which has brought about a series of novel challenging security and privacy threats. For this reason, one of the critical challenges of having numerous IoT devices is the capacity to manage them and their data. A specific concern is from which devices or Edge clouds to accept join requests or interaction requests. This paper discusses a design concept for developing the IoT data management platform, along with a data management and lineage traceability implementation of the platform based on blockchain and smart contracts, which approaches the two major challenges: how to implement effective data management and enrich rational interoperability for trusted groups of linked Things; And how to settle conflicts between untrusted IoT devices and its requests taking into account security and privacy preserving. Experimental results show that the system scales well with the loss of computing and communication performance maintaining within the acceptable range, works well to effectively defend against unauthorized access and empower data provenance and transparency, which verifies the feasibility and efficiency of the design concept to provide privacy, fine-grained, and integrity data management over the IoT devices by introducing the blockchain-based data management platform. © 2019 IEEE."
+Notes: IoT Data Management and Lineage Traceability: A Blockchain-based Solution
+
+Key terms:
+- Management hub solves the problem of translating requests in CoAP to JSON RPC, allowing nodes to connect directly to the BC platforms. I think it is very similar to the concept of smart gateway in the WoT research. IoT devices are managed by management hubs. 
+- Service Provider: An entity that collects data and performs business-related and operational rules (i.e., processing data)
+- Agent nodes: proxy nodes responsible for deploying the smart contracts on blockchains. 
+
+This paper proposes a decentralized data management platform that connects geographically distributed wireless sensor networks. 
+
+The use of BC is to counter the centralized access control system, which limits to devices within the same trust domain. 
+
+The objective of BC integration appears to be improving the security of the system, in terms of authenticity, integrity of data, and authorisation. 
+
+The blockchain and smart contracts are used for:
+- Authenticate and authorise devices
+- Logging and maintaining data provenance
+
+Operation flow:
+- Devices wanting to access data or services of another device contact blockchain to request access. Specifically, if A wants content of B, A ask B, and B as the hub to see if A is allowed. The hub then asks the blockchain. 
+- Smart contract verifies the access request and grants the access token
+- Devices use the access token to request data from resource servers (e.g., databases)
+- Resource server verifies the token sent by the device with the blockchain platform
+- Smart contract verifies the access token and confirms its validity
+- The resource provider then respond to the device with the requested data item.
+Note that devices would not connect to the blockchain directly. Instead, they rely on the management hub to construct and send requests on their behalf. 
+
+During the initialisation, the agent node deploys smart contracts on blockchain. These smart contracts maintain the authorisation policies. 
+
+Implementation wise, this scheme was implemented using Hyperledger Fabric. 
+
+Interesting tool for evaluation: CoAPBench: allowing to send out confirmable requests and waits for response before issuing the next request. 
+
+#####
+Improvement objective: security of the system, in terms of authorisation 
+
+Technical problem: decentralisation and transparency
+
+Affected module: Authorisation manager
+
+Where is BC deployed? Cloud
+
+What is stored on-chain? Access control policy
+
+What runs on chain? Access control evaluation policy
+
+Configuration of BC? 1 blockchain of Hyperledger Fabric variant. 
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85073594592&doi=10.1109%2fICCChinaW.2019.8849969&partnerID=40&md5=3ce7b46d92b5422ff248bed173d6a9fb
+https://ieeexplore.ieee.org/document/8849969/
+'File' Atttachments: internal-pdf://3936859994/08849969.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1049
+Author: H., Hasan, E., AlHadhrami, A., AlDhaheri, K., Salah and R., Jayaraman
+Year: 2019
+Title: Smart contract-based approach for efficient shipment management
+Journal: Computers and Industrial Engineering
+Short Title: Smart contract-based approach for efficient shipment management
+DOI: 10.1016/j.cie.2019.07.022
+Label: Hasan:2019:1
+Keywords: Blockchain
+Ethereum
+Internet of things
+IoT
+Smart contracts
+Supply chain management
+Abstract: "Efficient tracking of shipments is critical in managing global trade and logistics activities. The volume of global container movement combined with information opaqueness and process complexity necessitates implementing a robust technology solution with real time tracking capabilities. Blockchain is an emerging technology that offers the necessary platform to track and manage shipment movements in the supply chain using a peer-to-peer, secured, distributed ledger, and without intermediaries or trusted third parties. In this paper, we propose a blockchain-based solution for efficient supply chain management involving items shipped via smart containers. Our proposed solution utilizes the features of smart contracts in Ethereum blockchain to govern and manage interactions between the sender and receiver. Shipped items are included in smart containers equipped with Internet of Things (IoT) sensors that can be used to track and monitor predefined shipping conditions related to temperature, geographical location, humidity, pressure, light exposure, sudden fall, broken seal, etc. Ethereum smart contracts are used to manage shipment conditions, automate payments, legitimize receiver and also issue a refund in case of violations to predefined conditions. In the paper, we present and discuss key aspects related to architectural design, entity relations, interactions among participants, information flow, implementation and testing of the overall system functionality with a potential business case applied to vaccine supply chain. The Smart contracts were implemented in Solidity language and tested using Remix IDE environment, the code has been made publicly available for academic, research and practice community. © 2019 Elsevier Ltd"
+Notes: Smart contract based approach for efficient shipment management
+
+Key terms:
+- Single echelon shipment: single sender and single receiver. 
+
+There is a need for unified, trusted, tamper-proof shared log that is globally accessible by all stakeholders to enable visibility and traceability of shipment tracking process. 
+
+The problem with usual shipment process is that there are many participants, each have their own records and logs. 
+
+The use of BC and SC helps creating shipment management system without trusted third party. 
+
+Main components of the proposed solution:
+- Sender
+- Receiver
+- IoT-enabled container
+- Ethereum blockchain and smart contracts
+- MQTT server hosted on the cloud to aggregate sensor readings
+
+IoT-enabled containers can perform self-check to ensure that the shipment is in agreement with the pre-specified shipping condition. 
+
+Usage of smart contracts: 
+- Governing the rules of the business transaction between sender and receiver: receiver has to deposit the payment prior to shipping, and if the shipment reaches the final destination with no violation, the payment would be released. In other words, it acts as an escrow. 
+- Authenticate the receiver: the sender provides a keccak256 hash of a passphrase that gets stored in the smart contract prior to the shipment. The receiver must provide the matching passphrase, otherwise, the shipment would not be released. 
+
+The IOT-enabled container is equipped with GPS, pressure sensor,  temperature and accelerator to detect location, sudden movement, and opening of the sensor. They can be placed within the container and periodically transmit the data to the MQTT server and communicate with the Ethereum blockchain network. 
+
+Automatic push alerts and notifications are sent to sender and receiver when certain conditions are violated during the transportation. 
+
+The IoT-enabled container also automatically notify the Ethereum network the events of condition violation. 
+
+#####
+Improvement objective: provide interoperability among different participants in the supply chain to maintain a log of the shipping process. Blockchain is also used for improving the integrity (security) of the log information. 
+
+Technical problem: decentralisation of the business process
+
+Affected IOT module? Business process management component, event log
+
+What is stored on chain? Events of shipping condition violation.
+
+What runs on-chain? Business process
+
+Configuration of BC? One Ethereum network, seems to be public variant. 
+
+Any optimisation? No
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85068896995&doi=10.1016%2fj.cie.2019.07.022&partnerID=40&md5=47733cdcd709f54e6e73be4a5a89522d
+https://pdf.sciencedirectassets.com/271420/1-s2.0-S0360835219X00091/1-s2.0-S0360835219304140/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLWVhc3QtMSJHMEUCIHJ84tWUGtQB%2B2Fmmys13XHxFQMhUS1WerguVPpFvpE%2FAiEA18a7gmZ1EcxO0t%2FQc%2BpFIRQWbsjAJftSapWbfL3QikkqvQMI%2FP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgwwNTkwMDM1NDY4NjUiDKAfjHJJrJyk1uLFZiqRA0kHNFPVeFSJ1Q2GAHj3dHDfTtitUKW4ODoB2A1DVG9ojkHH6wcAmy57oBScnfeAatGFYfLMQhuRTnu7P%2BrrIa4wnWLEPeUcvbKLh4Br7cUGOC8eF3T%2FvSYlB98B51pi4S6zsCUvkGT4bt%2FPeEiSTNyw3uz3fxOPlG%2BlaiUQ%2BDtibA%2FLRqqG%2FsLof2ng%2BjfVQLlzrnCtMkXY52X34BjBTrkR4LA489qkHi4HYX5DQtTBLnJSNRlCQhxl2KfEMW%2BiGAWor0h4Dk%2FBH34xqekh%2Fr9TpzISx4l%2FLl%2BiaUIx9XSKpZ9cRlHtxlmRDkFF6lzIVGd1C8p3ccJfgk3ctIl%2FGihlVUE5xC0Dxh%2B3ZHaF8hycA9QMSra7H8tzxV1g2KN2rW3CN1t1F1eOFCOHD0BbVj355AU%2BDHjmPDWglsymHCkdIdTypWWpPY1XQuv4A54nWQrBI04jsCfe6esURVdTm2pj3qftfPQrHZdTTf44nMRcSP4OHPSHvsobwuQ2URKP6AnmHUcOq3HWDOGcwwmB8UunMKf%2FmfgFOusB4JFjduSXCBLcanjnQGExEDRw5bBSDXwqGjZExVjAy8gSrLiAVy4Du3ddyfCHe%2BM1SbSKgF94Uddg5D6CkMrJQuf2QVH7vdpOfKGm1K5%2BNt5KHYt5Z05zGeIBFLYs9opWFIYsjvR6iOlyfErKNejVD78OYh5HOMM5rudZUzyQvr5pHtGYFR0MvG47nNypV3TN5XQwScdmeZDXSzJI8OAH%2FoEKERsPS6Rj0rURVYG%2BrzwTSIfthhalaafp9DdypdwlFGrovzs4gpoPRhjUrCEXjH9Kj09vKeQOPzNhqF5SDP8tkzhIUdlV3mIO5w%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200709T024227Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYRNRHWGNH%2F20200709%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1f0bd3f0736832293ef40f98b1e0bf51dfcb0fa24057ad6d1c3eef17adb5eb93&hash=44370b90f8708968fe7bd273f8b6ff4a132a6c50cb059c342253f8d622fe7424&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0360835219304140&tid=spdf-d7bc1e81-f941-448a-a17a-d7d183dafe94&sid=61b602e14859f84f0679e431df325b728027gxrqa&type=client
+'File' Attachments: internal-pdf://3182432947/H-2019-Smart contract-based approach for effic.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1050
+Author: H.-A., Pham, T.-K., Le, T.-N.-M., Pham, H.-Q.-T., Nguyen and T.-V., Le
+Year of Conference: 2019
+Title: Enhanced Security of IoT Data Sharing Management by Smart Contracts and Blockchain
+Conference Name: "Proceedings - 2019 19th International Symposium on Communications and Information Technologies, ISCIT 2019"
+Short Title: Enhanced Security of IoT Data Sharing Management by Smart Contracts and Blockchain
+DOI: 10.1109/ISCIT.2019.8905219
+Label: Pham:2019:1
+Keywords: Blockchain
+Data Integrity
+Data Security
+IoT
+IoT Data Management
+Smart Contract
+Abstract: "In recent years, the incredible growth and diversity of IoT systems and applications have generated an enormous amount of sensing data which play an essential role in IoT-based smart systems. So far, it has consumed much time and cost to collect these sensing data enough for these intelligent systems, which is the main reason leading to the needs of sharing available data to shorten time-consuming and cost savings for the data collection process. However, there are many challenges in ensuring integrity, security, and fairness in the data sharing process. In this paper, the authors propose a model leveraging the emerging Blockchain technology as an alternative solution to enhance the security of IoT data sharing management in terms of three principal criteria including confidentiality, integrity, and availability. Our prototype on Ethereum Blockchain demonstrates the feasibility of the proposed model. © 2019 IEEE."
+Notes: Enhanced Security of IoT Data Sharing Management by Smart Contracts and Blockchain
+
+Key terms:
+- Data owner: who has data to share or sell
+- Data consumer: who wants to buy the data
+- IoT data: sensing data and corresponding timestamps.
+
+The purpose of this paper is to devise an alternative decentralized architecture for enhancing the integrity and security of IoT data sharing. It aims to remove the trusted third party between the data owner and data consumer. 
+
+Data collection process: 
+- IoT end-devices collect IoT data and transfer to off-chain storage through IoT gateways. 
+- Upon receiving the data, the gateway encrypt the data by the owner’s private key and push them to the off-chain storage 
+
+Data exchange process:
+- The data owner shares the information regarding their available IoT devices and their data to others via smart contract. (Thus smart contracts acts as registry)
+- The data consumers send data rental fee to the smart contract corresponding to the device and data that they want. 
+- The smart contracts handle the business process
+- When the smart contract has decided on an outcome, the gateway would be notified 
+- The gateway would decrypt the data from the off-chain storage, encrypt with the public key of the consumer, and hash the data before sending the whole package to the consumer’s API
+- After sending the gateway confirms with the smart contract
+- The data consumer will receive an event from smart contract, informing them that the requested data was sent together with the hash value. 
+- Data consumer verifies the data and confirms with the smart contract that the data was right. 
+- The smart contract releases the fee.
+
+[Thoughts] What happen if the data consumer runs away with the money? What happen if they tell the smart contract that the data is not right, so that they can have the data and they can also have the money back? 
+
+#####
+Improvement objective: Facilitate the ownership and exchange of IoT resources
+
+Technical problem: decentralisation of business processes involving IoT devices
+
+Affected IOT module? Business process orchestrator
+
+Where is BC? Cloud
+
+What is stored on chain? Registry of data items and devices, contracts between buyers and sellers
+
+What runs on chain? Business process
+
+Configuration of BC? Just public Ethereum
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85076201861&doi=10.1109%2fISCIT.2019.8905219&partnerID=40&md5=210720604b58ac190321252575a9173b
+https://ieeexplore.ieee.org/document/8905219/
+'File' Atttachments: internal-pdf://1335354340/08905219.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1051
+Author: H.-T., Wu and C.-W., Tsai
+Year: 2019
+Title: An intelligent agriculture network security system based on private blockchains
+Journal: Journal of Communications and Networks
+Short Title: An intelligent agriculture network security system based on private blockchains
+DOI: 10.1109/JCN.2019.000043
+Label: Wu:2019:1
+Keywords: Blockchain
+intelligent agriculture
+internet of things
+network security
+privacy
+Abstract: "Countries around the world are nowadays actively promoting development in intelligent agriculture. Each of them must develop a specific plan tailored to environmental farming indices of each individual farm, and such information would be both important and sensitive. This is why information in intelligent agriculture requires protection from network security to ensure data privacy and integrity. This study proposes applying dark web technology to ensure the privacy of blockchains and servers. The study will monitor packet transmission frequency in intelligent agriculture to prevent distributed denial-of-service (DDOS) attacks. The main features of system include: (1) An identity authentication mechanism, (2) secure transmission of information, (3) establishment of private blockchains, (4) a faster, improved authentication system for blockchain information, and (5) resistance against DDOS attacks. The proposed scheme can safeguard network security for the IoT as well as the servers by way of applying dark web technology, which can avoid exposure of blockchains and server ID addresses and thus in turn lower the risks of DDOS attack damages. Experiment results indicate that the application of lightweight encryption of proposed scheme does indeed improve the authentication speed while also satisfying requirements of network security. © 2011 KICS."
+Notes: An Intelligent Agriculture Network Security System Based on Private Blockchains
+
+Key terms:
+- Intelligent agriculture: sensors can monitor the growth of crops and aid in the procedures such as water irrigation, which can reduce labour costs and reduce waste of water resources. 
+
+Farming information, specifically the specific plan tailored to the farming environment, is important and sensitive. For instance, the farm might have to spend a lot of effort on coming up with those parameters for their IoT-based farming system. Thus, this information must be protected to ensure data privacy (confidentiality) and integrity. 
+
+Components of the proposed scheme:
+- Authenticate devices to prevent tampering from malicious parties, given the fact that devices are deployed in outdoor environments. 
+- Guarantees privacy and integrity of transmitted information using symmetric encryption and hash
+- Establishing private blockchain to ensure the integrity and confidentiality of the information at rest. 
+- Hide the location of blockchains and server to avoid DDoS attacks
+
+This study uses intelligent farming equipments that use 4G for communications. Interestingly, the authors assume that these devices would also be equipped with a keyboard. 
+
+The “dark net” mechanism that this paper mention means:
+- Any party wanting to access the blockchain must undergo mutual identity authentication and establish a common session key. 
+- Session key is unique between sessions. 
+
+BC is used to store a sensor readings and encryption information necessary to verify the authenticity of the message and the authenticity of the device generating it.
+
+##### 
+Improvement objective: improve the security of the system in terms of authenticity of messages, devices, confidentiality, and integrity of the data at rest. 
+
+Technical problem: Integrity of the data at rest without trusted third party.
+
+Affected module: sensor database
+
+Where is BC deployed? Cloud
+
+What is stored? Sensor readings plus encryption information to verify the authenticity and origin. 
+
+What runs on chain? Nope
+
+Configuration? Nope
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85072970758&doi=10.1109%2fJCN.2019.000043&partnerID=40&md5=8382490d61f26eee51fa18232d621f3b
+https://ieeexplore.ieee.org/ielx7/5449605/8896188/08854268.pdf?tp=&arnumber=8854268&isnumber=8896188&ref=
+'File' Attachments: internal-pdf://3594751253/H.-T-2019-An intelligent agriculture network s.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1055
+Author: I., Riabi, Y., Dhif, H.K.B., Ayed and K., Zaatouri
+Year of Conference: 2019
+Title: A blockchain based access control for IoT
+Conference Name: "2019 15th International Wireless Communications and Mobile Computing Conference, IWCMC 2019"
+Short Title: A blockchain based access control for IoT
+DOI: 10.1109/IWCMC.2019.8766506
+Year Published:2019
+Label: Riabi:2019:1
+Keywords: Access control
+Blockchain
+Internet of Things
+Smart Contract
+Abstract: "Traditional access control models rely on a central entity. This may cause single point of failure, ethical and privacy problems when applied in the Internet of Things (IoT). A distributed access control can overcome the single point failure problem of centralized access models. In this paper, we propose a distributed and trustworthy access control solution for the IoT by applying the smart contract-enabled blockchain. © 2019 IEEE."
+Notes: A Blockchain based access control for IoT
+
+Key terms:
+- Subject: the entity that can access objects
+- Object: the access controlled resource
+- Object owner: owner of the resource which defines the access policy
+- Operation: The way which subject access the object (i.e, read, write, create, delete, search)
+- Reference monitor: the entity that decides on whether to grant access of the object to the subject. 
+- Access Control List (ACL): list of subjects and their access permissions. 
+
+In this scheme, resource owner deploys its own smart contract, which represents the access control list of its resources. This is essentially a list of subjects and the operations that they are allowed. 
+
+Miners in this scheme generate access tokens based on the ACL generated by the resource owner. If the requester is in the ACL, the miner is responsible for signing the token and encrypting it with a pre-negotiated symmetric key or requester’s public key. 
+
+The requester can only access resources if it has access tokens. In order to have the access token, the requester needs to negotiate with the resource owners to be added to the ACL. 
+
+Implementation wise, this scheme is built on Ethereum. 
+
+[Thought] There is no reasoner this work to claim that it solves the mobility problem. Yet there it is . 
+
+#####
+Improvement objective: Improve the authorisation of the system, thus improving its security. 
+
+Technical problem: decentralisation 
+
+Affected module: authorisation manager
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Access control list
+
+What is runs on chain? Nope
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85073898837&doi=10.1109%2fIWCMC.2019.8766506&partnerID=40&md5=94588474f77715fef7495a44f3696349
+https://ieeexplore.ieee.org/document/8766506/
+'File' Atttachments: internal-pdf://2706896572/08766506.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1018
+Author: K., Fan, S., Sun, Z., Yan, Q., Pan, H., Li and Y., Yang
+Year: 2019
+Title: A blockchain-based clock synchronization Scheme in IoT
+Journal: Future Generation Computer Systems
+Short Title: A blockchain-based clock synchronization Scheme in IoT
+DOI: 10.1016/j.future.2019.06.007
+Label: Fan:2019:1
+Keywords: Blockchain
+Clock synchronization
+Consensus
+Internet of Things
+Abstract: "As an important part of new generation of information technology, Internet of Things (IoT), which is developing rapidly, requires high time accuracy. However, malicious nodes located in an IoT network can influence clock synchronization. The security issues of time transfer and consistency are critical and challenging. In this paper, we propose a secure scheme based on blockchain to solve the problem of time synchronization in IoT. In the distributed network of IoT, a blockchain is utilized to record and broadcast time in order to reduce attacks from external environments with the property of passing trust. Moreover, this scheme has the advantage of low-latency by employing a consensus mechanism based on Proof of Stability. Serious analysis and simulation show that the scheme can effectively resist malicious attacks and reduce the latency of consensus process by comparing with traditional methods. © 2019 Elsevier B.V."
+Notes: A Blockchain-based Clock Synchronization Scheme in IoT
+
+Motivation:
+- Time synchronisation is important in IoT systems
+- Malicious devices may tamper the correct time in the process of clock synchronisation and then pass it to other nodes. 
+- Blockchain can be used as a decentralized, trustless infrastructure to carry out the clock synchronisation of IoT devices. 
+
+Goals of the protocol:
+- Quick, deterministic clock synchronisation 
+- Devices resource consumption efficiency
+- Resistant to malicious nodes
+
+Assumptions:
+- CA and time sources are trusted
+- Participants are able to connect to time sources and get accurate time
+- Trusted time source is more than one. 
+
+Threat model:
+- Network hijacking: essentially sybil attack. However, the authors assume that the adversary cannot control more than 50% of the network, which effectively eliminate the 51% attack from the model.
+- Tracing: attacker can predict the trend of the next round of elections and attack the participants who may become representative node
+
+Modules in the time synchronisation system:
+- CA: verify the identities of the nodes that apply to join the federation and remove malicious nodes
+- Time source: they own the most accurate time in the network and respond to node’s requests for time data. However, it only interact with representative nodes that have been elected by consensus. 
+- Node: participate in a blockchain, which holds the consensus on the current accurate time. Nodes use Proof-of-Stability to reach consensus and elect representative nodes to request time from the time sources. 
+- Device: normal devices, connecting to the local node for their time. 
+
+Nodes in the network are ranked based on Stability Index (SI), which measures its network stability and device performance. 
+
+This system actually has two blockchain running at the same time. 
+
+The virtual blockchain handles the consensus process called proof of stability. 
+
+Proof-of-Stability process:
+- When the time comes (based on the local clock), a node would send out request for campaigning to become the representative node
+- Other nodes would check and response with ACK
+- When the node has gathered 2N/3 ACKs, it is able to participate in the campaign. 
+- If it receives VBlock from another node before having enough ACK, it stops receiving ACK and drop from the campaign. 
+- The node then package all the ACKs into a new VBlock, and broadcast it to other nodes ranked on the SI.
+- Other nodes send VACK in response
+- If a node has received 2N/3 VACKs, it has been chosen as the representative of the network. 
+- On behalf of the network, it requests the time from the time sources to generate time block
+
+Content of the VChain:
+- ID of the node, list of ACKs
+
+Content of the time blockchain:
+- Time data from the time source,
+- Index
+- Previous block hash value
+- Time stamp
+- View number
+- VACKs
+
+#####
+Improvement objective: security in terms of integrity of the time source data and process
+
+Technical problem: integrity of the data at rest, resistant to tampering, providing traceability of data
+
+Affected module: time synchroniser 
+
+Where is BC? Fog
+
+What is stored? Consensus on the voting process, time data
+
+What runs on chain? Nope
+
+Configuration of BC? In house BC with Proof of Stability, which is a BFT based protocol
+
+Any optimization? Alternative consensus based on BFT
+'File' Attachments: internal-pdf://2511712088/K-2019-A blockchain-based clock synchronizatio.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1034
+Author: K., Loupos, B., Caglayan, A., Papageorgiou, B., Starynkevitch, F., Vedrine, C., Skoufis, S., Christofi, B., Karakostas, A., Mygiakis, G., Theofilis, A., Chiappetta, H., Avgoustidis and G., Boulougouris
+Year of Conference: 2019
+Title: "Cognition enabled IoT platform for industrial IoT safety, security and privacy-the CHARIOT project"
+Conference Name: "IEEE International Workshop on Computer Aided Modeling and Design of Communication Links and Networks, CAMAD"
+Short Title: "Cognition enabled IoT platform for industrial IoT safety, security and privacy-the CHARIOT project"
+DOI: 10.1109/CAMAD.2019.8858488
+Label: Loupos:2019:1
+Keywords: Cognition
+Data Privacy
+Industrial IoT
+Safety
+Security
+Abstract: "The CHARIOT project is developing an innovative design method and cognitive platform that supports a unified and integrated approach towards Data Privacy, Security and Safety of Industrial IoT Systems including several technologies. These include: i) an advanced Privacy and security protection building on state of the art Public Key Infrastructure (PKI) technologies, ii) a blockchain ledger that provides categorization and affirmation of IoT physical, operational and functional changes, iii) a FOG-based decentralized infrastructure for Firmware Security integrity, iv) an IoT Safety Supervision Engine towards securing IoT data, devices and functionality in new and existing industry-specific safety critical systems, v) a cognitive System and Method with accompanying supervision, analytics and prediction models enabling high security and integrity of Industrials IoT as well as vi) new methods and tools for static code analysis of IoT devices. This short paper provides an overview of the above technologies as currently being integrated in the CHARIOT project. © 2019 IEEE."
+Notes: Cognition Enabled IoT Platform for Industrial IoT Safety, Security, and Privacy - The CHARIOT Project
+
+Key Term:
+- CHARIOT (Cognitive Heterogeneous Architecture for Industrial IoT): An EC research project under the IoT-03-2017-R&I on IoT integration and platforms. 
+- PSS: Privacy, Safety, Security
+
+In this platform, blockchain is used to link services, IoT gateways, and IoT sensors. This blockchain is used as a communication channel between these parties in the network. 
+
+This blockchain contains smart contracts that can be used to provision, amend, and revoke identities within the trestles network formed by the blockchain. These smart contracts can be configured to to be multi-signature based. 
+
+So, in other words, the blockchain acts as the decentralised backbone of a public key infrastructure. 
+
+#####
+Improvement objective: improve integrity of the management of identity in the industrial IOT system. 
+
+Technical challenge: decentralisation of the process and the identity data. 
+
+Affected module: Identity manager
+
+Where is BC deployed? Fog
+
+What is stored on chain? Identities
+
+What runs on chain? Identity management logic
+
+Configurations of BC? Permission blockchain
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85073792739&doi=10.1109%2fCAMAD.2019.8858488&partnerID=40&md5=274a82e60217ce936a374f6401b3b6b1
+https://ieeexplore.ieee.org/document/8858488/
+'File' Atttachments: internal-pdf://1244316437/08858488.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1053
+Author: M., Li, H., Tang and X., Wang
+Year of Conference: 2019
+Title: Mitigating routing misbehavior using blockchain-based distributed reputation management system for IoT Networks
+Conference Name: "2019 IEEE International Conference on Communications Workshops, ICC Workshops 2019 - Proceedings"
+Short Title: Mitigating routing misbehavior using blockchain-based distributed reputation management system for IoT Networks
+DOI: 10.1109/ICCW.2019.8757083
+Label: Li:2019:1
+Keywords: Blockchain
+Distributed reputation management
+IoT
+Routing protection
+Abstract: "With the rapid proliferation of Internet of Thing (IoT) devices, many security challenges could be introduced at low-end routers. Misbehaving routers affect the availability of the networks by dropping packets selectively and rejecting data forwarding services. Although existing Reputation Management (RM) systems are useful in identifying misbehaving routers, the centralized nature of the RM center has the risk of one-point failure. The emerging blockchain techniques, with the inherent decentralized consensus mechanism, provide a promising method to reduce this one-point failure risk. By adopting the distributed consensus mechanism, we propose a blockchain-based reputation management system in IoT networks to overcome the limitation of centralized router RM systems. The proposed solution utilizes the blockchain technique as a decentralized database to store router reports for calculating reputation of each router. With the proposed reputation calculation mechanism, the reliability of each router would be evaluated, and the malicious misbehaving routers with low reputations will be blacklisted and get isolated. More importantly, we develop an optimized group mining process for blockchain technique in order to improve the efficiency of block generation and reduce the resource consumption. The simulation results validate the distributed blockchain-based RM system in terms of attacks detection and system convergence performance, and the comparison result of the proposed group mining process with existing blockchain models illustrates the applicability and feasibility of the proposed works. © 2019 IEEE."
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85070290028&doi=10.1109%2fICCW.2019.8757083&partnerID=40&md5=45cdcf4bedd13e8f14a7bf1eec4e0648
+https://ieeexplore.ieee.org/document/8757083/
+'File' Atttachments: internal-pdf://1590079444/08757083.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1030
+Author: N., Maouriyan and A.G.A., Krishna
+Year of Conference: 2019
+Title: AQUACHAIN-Water Supply-Chain management using Distributed Ledger Technology
+Conference Name: "2019 Proceedings of the 3rd International Conference on Computing and Communications Technologies, ICCCT 2019"
+Short Title: AQUACHAIN-Water Supply-Chain management using Distributed Ledger Technology
+DOI: 10.1109/ICCCT2.2019.8824945
+Label: Maouriyan:2019:1
+Keywords: Blockchain
+Distributed Ledger Technology(DLT)
+Economy
+Government
+Health
+IoT
+Water
+Abstract: "Water shortage is fast becoming one of the biggest crises of this century. The recent, exponential rise in adoption of the most disparate Internet of Things (IoT) devices and technologies has reached also Water supply chains, drumming up substantial research and innovation interest towards developing reliable, auditable and transparent traceability systems. Current IoT-based traceability and provenance systems for water supply chains are built on top of centralized infrastructures and this leaves room for unsolved issues and major concerns, including data integrity, tampering and single points of failure. Blockchains, the distributed ledger technology underpinning cryptocurrencies such as Bitcoin, represent a new and innovative technological approach to realizing decentralized trustless systems. This will also eliminate corruption due to unmaintained record of sources. Indeed, the inherent properties of this digital technology provide fault-tolerance, immutability, transparency and full traceability of the stored transaction records, as well as coherent digital representations of physical assets and autonomous transaction executions. This paper presents Aqua-chain, a fully decentralized, blockchain-based traceability solution for Water supply chain management, able to seamless integrate IoT devices producing and consuming digital data along the chain. To effectively assess Aqua-chain, first, we defined a classical use-case within the given vertical domain, namely from-supplier-to-buyer. Then, we developed and deployed such use-case, achieving traceability using blockchain implementation, Ethereum. Finally, we evaluated and compared the performance deployments, in terms of latency, CPU, and network usage, also highlighting its main pros and cons. © 2019 IEEE."
+Notes: AQUACHAIN - Water Supply chain management using Distributed Ledger Technology
+
+Actors of water supply chain:
+- Supplier: owners of land and water reservoirs who provide raw materials
+- Producer: usually also the suppler, who is responsible for harvesting and maintaining sanitation of the water
+- Processor: packaging, purifying water
+- Distributor: moving the water between processor and retailer
+- Retailer: selling the water
+- Consumer: final element of the chain. 
+
+This work employed a layered architecture to isolate BC, making it possible to use different kind of BC instead of being stuck to one. 
+
+Main modules of AQUACHAIN:
+- API: Exposing high level abstraction to integrate BC with other components that uses the AQUACHAIN
+- Controller: Transforming high level API call to low-level call in the blockchain layer
+- Distributed Technology: Running the business logic in the form of smart contracts. 
+
+This work deploys BC directly on the edge nodes. These edge nodes are responsible for connecting to the sensors as well. 
+
+#####
+Improvement objective: enable the tracking of product across supply chain, improve security in terms of integrity of the records, improve the interoperability between actors in the supply chain. 
+
+Technical problem: decentralise the operation
+
+Affected modules of IoT: Sensor record, business process manager
+
+Where is BC deployed? Fog
+
+What is stored on chain? Business transactions and sensor data
+
+What runs on chain? Business logic of the transactions
+
+Configuration of BC? One Ethereum blockchain
+
+Any optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85072825753&doi=10.1109%2fICCCT2.2019.8824945&partnerID=40&md5=8fd66850f2e37ffe27517fb6d13d9151
+https://ieeexplore.ieee.org/document/8824945/
+'File' Atttachments: internal-pdf://1911165193/08824945.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1016
+Author: O., Leiba, R., Bitton, Y., Yitzchak, A., Nadler, D., Kashi and A., Shabtai
+Year: 2019
+Title: IoTPatchPool: Incentivized delivery network of IoT software updates based on proofs-of-distribution
+Journal: Pervasive and Mobile Computing
+Short Title: IoTPatchPool: Incentivized delivery network of IoT software updates based on proofs-of-distribution
+DOI: 10.1016/j.pmcj.2019.04.010
+Label: Leiba:2019:1
+Abstract: "In this paper we introduce IoTPatchPool — a novel scheme that enables an incentivized distributed delivery network of IoT software updates. We use a decentralized storage network for reducing the load on the vendor when distributing patches toward IoT devices, and eliminating central points of failure. Unlike existing peer-to-peer file sharing networks which have a fundamental availability problem for unpopular files, our protocol utilizes blockchain-based smart contracts to incentivize independent peers, termed distributors, by means of cryptocurrency payments. A vendor of IoT devices deploys a smart contract with a deposit, which acts as a publicly verifiable binding bid for delivery of patches to a specific set of IoT endpoints. Distributors will compete for delivering the updates to the desired IoT devices and present proofs-of-distribution in exchange for cryptocurrency payments. We address the fair exchange problem between distributors and the consuming IoT devices by utilizing a variation of the Zero-Knowledge Contingent Payments (ZKCP) protocol, ensuring that the process is trustless. This can encourage the participation of a large number of distributors, and thus facilitate a rapid scale-out of the system. Finally, we present and evaluate a prototype implementation combining the BitTorrent network with the cryptocurrency Ethereum. © 2019 Elsevier B.V."
+Notes: IoTPatchPool: Incentivized delivery network of IoT Software Updates based on proof-of-distribution
+
+Key terms:
+- Distributor: peer nodes that deliver software updates to IoT devices in exchange for proof-of-distribution
+- Proof-of-distribution is unforgeable proof that a single update has been delivered to a single IoT device. 
+- 
+
+This paper proposes a decentralized and incentivised IoT updates delivery network based on trustless proofs-of-distribution. 
+
+Distributors are compensated with cryptocurrency payments for delivering software updates to IoT devices. 
+
+Device manufacturer uses smart contract to issue a bid, offering compensation to distributors who deliver the update. 
+
+This scheme employs a factory smart contract, which functions as a generator of new instances of patching contracts. 
+
+In the patching contracts, vendor bids digital currency payments for receiving proofs-of-distribution from destination IoT devices. 
+
+#####
+Improvement objective: improve the availability of patches, while reducing the stress on centralized infrastructure, facilitate exchange of resources
+
+Technical problem: decentralized operation and incentivization
+
+Affected modules: business process manager
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Exchanges related to the delivery of patch and exchange for money
+
+What runs on chain? Business process related to the exchange
+
+Configuration of BC? One private Ethereum
+
+Any optimization? Nope
+'File' Attachments: internal-pdf://1687926648/O-2019-IoTPatchPool_ Incentivized delivery net.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1031
+Author: P., Cui and U., Guin
+Year of Conference: 2019
+Title: Countering Botnet of Things using Blockchain-Based Authenticity Framework
+Conference Name: "Proceedings of IEEE Computer Society Annual Symposium on VLSI, ISVLSI"
+Short Title: Countering Botnet of Things using Blockchain-Based Authenticity Framework
+DOI: 10.1109/ISVLSI.2019.00112
+Label: Cui:2019:1
+Keywords: Blockchain
+Botnet
+Cloning
+Device Identity
+Hardware Security
+Internet of Things (IoT)
+Physically Unclonable Functions (PUF)
+Abstract: "The success and widespread use of Internet of Things (IoT) bring remarkable contributions and economic benefits in various fields. However, the increasing number of devices also raises security concerns. The prevalence of Botnet of Things (BoT) has been observed and it has been recently reported that the launched attacks affect multiple domains and have caused unacceptable losses. As majority of IoT devices are manufactured off-shore, ensuring their identity becomes one of the major challenges. Cloned devices, with backdoors for malicious purposes, can provide an undue advantage of the adversary to compromise a system even though proper security measures are in place. In this paper, we propose a novel blockchain-based framework to provide traceability of hardware. A unique identity for every IoT device is ensured using a physically unclonable function (PUF). The blockchain provides the verification of these devices by comparing these unique IDs. HyperLedger is selected to implement the blockchain-based framework, and its performance is being evaluated and analyzed. © 2019 IEEE."
+Notes: Countering Botnet of Things using Blockchain-based Authenticity Framework
+
+Motivation: use traceability of hardware using blockchain to counter cloned devices with built-in backdoor. 
+
+Unique identifier of the device is done using PUF based on SRAM. 
+
+Blockchain stores the unique device ID based on SRAM PUF
+
+Essentially, manufacturer stores the hash of the device ID based on SRAM PUF to the blockchain. Users and distributors then can do the same SRAM PUF process to get the result and compare it with the data stored on blockchain to see if the device is real or cloned. 
+
+[Thoughts] This work is interesting in the sense that it does not track the whole supply chain like how other works did. 
+
+The permissioned blockchain service can be maintained by a group of authenticated IoT device managers, or a trusted blockchain service provider. 
+
+Manufacturers need to run one or multiple blockchain network nodes to perform blockchain operations. 
+
+Additional information regarding the device type can be updated by the manufacturer. 
+
+#####
+Improvement objective: ensure the authenticity of the device as it moves through supply chain. 
+
+Technical problem: prevent tampering of the data at rest, decentralise the control over this data.
+
+Affected IoT component: device registry
+
+Where is BC? Cloud
+
+What is stored? Hash of the device ID, based on PUF
+
+What runs on chain? Nope
+
+Configurations	 of BC? Hyperledger Fabric
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85072958341&doi=10.1109%2fISVLSI.2019.00112&partnerID=40&md5=908d7903f45c78df2f86ee11d9424b68
+https://ieeexplore.ieee.org/document/8839425/
+'File' Atttachments: internal-pdf://1869470124/08839425.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1025
+Author: P., Kochovski, S., Gec, V., Stankovski, M., Bajec and P.D., Drobintsev
+Year: 2019
+Title: Trust management in a blockchain based fog computing platform with trustless smart oracles
+Journal: Future Generation Computer Systems
+Short Title: Trust management in a blockchain based fog computing platform with trustless smart oracles
+DOI: 10.1016/j.future.2019.07.030
+Label: Kochovski:2019:1
+Keywords: Blockchain
+Fog
+Smart contract
+Smart oracle
+Trust
+Abstract: "Trust is a crucial aspect when cyber-physical systems have to rely on resources and services under ownership of various entities, such as in the case of Edge, Fog and Cloud computing. The DECENTER's Fog Computing Platform is developed to support Big Data pipelines, which start from the Internet of Things (IoT), such as cameras that provide video-streams for subsequent analysis. It is used to implement Artificial Intelligence (AI) algorithms across the Edge-Fog-Cloud computing continuum which provide benefits to applications, including high Quality of Service (QoS), improved privacy and security, lower operational costs and similar. In this article, we present a trust management architecture for DECENTER that relies on the use of blockchain-based Smart Contracts (SCs) and specifically designed trustless Smart Oracles. The architecture is implemented on Ethereum ledger (testnet) and three trust management scenarios are used for illustration. The scenarios (trust management for cameras, trusted data flow and QoS based computing node selection) are used to present the benefits of establishing trust relationships among entities, services and stakeholders of the platform. © 2019 Elsevier B.V."
+Notes: Trust management in a blockchain based fog computing platform with trustless smart oracles
+
+Key terms:
+- Trust is a particular level of subjective probability with which an agent assesses that another agent or group of agents will perform a particular action, both before he can monitor such action and in a context in which it affects his own action. 
+- Smart Oracle is a specific software service which is used to assess and provide values of specific metrics, such as QoS to a smart contract. 
+- Monitoring-based model of trust management: instantiates trust based on the observed behaviour of past interactions (e.g., social networking, cooperative solutions, crowd-sourcing) between entities. 
+- Evidence-based trust model: proves trust relationship among entities based on public-key, address, identity or any similar evidence that the entity can generate for itself or other users. 
+- Blockchain-based trust model allows full transparency and traceability. 
+
+The use of blockchain helps removing trusted third-party, which works well in highly decentralized environments where all parties require a degree of autonomy in their operation. 
+
+This work is a blockchain-based trust management, and it uses trustless smart oracles to reduce the operation costs. 
+
+The need of trust in a use case involving using cameras to monitor an environment:
+- Cameras must be trustworthy
+- Fog nodes that stream and process the data must be trustworthy
+- Cloud storage that stores the log of alerts must be trustworthy
+
+The smart contracts are also used to handle the exchange of coins of access to video data. 
+
+The smart contracts use Oraclize contract to interact with off-chain Web API to gain access to a pool of trusted camera, communication channels, or other communication capabilities. The oracle feeds information about the QoS of infrastructure as well as real-time status of devices. 
+
+One smart contract for one request. 
+
+##### 
+Improvement objective: facilitate exchange of resources generated by IoT devices, improve the overall integrity of the system
+
+Technical problem: incentivization, decentralisation of process
+
+Affected module: business process orchestrator
+
+Where is BC? Cloud
+
+What is stored on chain?  Records of the exchange
+
+What runs on chain? Business logic of the exchange
+
+Configuration of BC? One public Ethereum
+
+Optimization? Nope
+'File' Attachments: internal-pdf://1713258267/P-2019-Trust management in a blockchain based.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1035
+Author: Q., Wen, Y., Gao, Z., Chen and D., Wu
+Year of Conference: 2019
+Title: A blockchain-based data sharing scheme in the supply chain by IIoT
+Conference Name: "Proceedings - 2019 IEEE International Conference on Industrial Cyber Physical Systems, ICPS 2019"
+Short Title: A blockchain-based data sharing scheme in the supply chain by IIoT
+DOI: 10.1109/ICPHYS.2019.8780161
+Label: Wen:2019:1
+Keywords: Attribute-based Encryption
+Blockchain
+Industrial Internet of Things
+Smart Contract
+Supply chain
+Abstract: "A supply chain is a system that includes multiple entities such as suppliers, manufacturers, carriers, retailers, and customers. How to encourage the willingness to cooperate and share information between these entities has always been one of the major challenges in the field of supply chain management. The Industrial Internet of Things (IIoT) can help entities get real-time data in the supply chain to share the key information and reduce costs. However, the supply chain not only needs to know how to gather the data but also ensures that the data processed is not leaked. Since Blockchain, as the main technology of Bitcoin, has the advantages of traceability and anti-counterfeiting, blockchain is the right tool to tackle the date sharing problem in supply chain. In this paper, we connect IIoT devices to the blockchain by combining the monitoring and recording of IIoT devices and storing real-time data in the network by smart contract. In addition, a blockchain-based supply chain structure is proposed. This structure provides collaboration solutions between different entities in the supply chain. In this structure, a fine-grained data sharing scheme for supply chain is proposed. By setting access policies to the smart contract, only the companies that satisfy the attributes of access policies can execute the smart contract and view the details of the transaction. The proposed scheme ensures reliability of data in the supply chain, and the privacy protection of the chain. © 2019 IEEE."
+Notes: A blockchain-based data sharing scheme in the supply chain by IIoT
+
+#####
+Improvement objective: improve transparency of information and the interoperability between members in the supply chain by giving them the shared writing capability. 
+
+Technical problem to solve: decentralisation of data and operation
+
+Where is BC? Cloud
+
+What is stored on chain? Data produced by IIoT sensors, managing the hand-over of items. 
+
+What runs on chain? Nope
+
+Configurations of BC? One Ethereum
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85070874364&doi=10.1109%2fICPHYS.2019.8780161&partnerID=40&md5=be15c48b95097e73c801373e760c7116
+https://ieeexplore.ieee.org/document/8780161/
+'File' Atttachments: internal-pdf://3287385122/08780161.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1033
+Author: S., Singh, I.-H., Ra, W., Meng, M., Kaur and G.H., Cho
+Year: 2019
+Title: SH-BlockCC: A secure and efficient Internet of things smart home architecture based on cloud computing and blockchain technology
+Journal: International Journal of Distributed Sensor Networks
+Short Title: SH-BlockCC: A secure and efficient Internet of things smart home architecture based on cloud computing and blockchain technology
+DOI: 10.1177/1550147719844159
+Label: Singh:2019:1
+Keywords: blockchain
+cloud computing
+Internet of things
+security attacks
+Abstract: "The growing demand for human-independent comfortable lifestyle has emboldened the development of smart home. A typical keenly intellective home includes many Internet of things contrivances that engender processes and immensely colossal data to efficiently handle its users’ demands. This incrementing demand raises a plethora of concern cognate to a smart home system in terms of scalability, efficiency, and security. All these issues are tedious to manage, and the existing studies lack the granularity for surmounting them. Considering such a requisite of security and efficiency as a quandary at hand, this article presents a secure and efficient smart home architecture, which incorporates the blockchain and the cloud computing technologies for a cumulated solution. Because of the decentralized nature of blockchain technology, it can serve the processing services and make the transaction copy of the collected sensible user data from smart home. To ensure the security of smart home network, our proposed model utilizes the multivariate correlation analysis technique to analyze the network traffic and identify the correlation between traffic features. We have evaluated the performance of our proposed architecture using different parameters like throughput and discovered that blockchain is an efficient security solution for the future Internet of things network. © The Author(s) 2019."
+Notes: SH-BlockCC: A Secure and Efficient Internet of Things Smart Home Architecture Based on Cloud Computing and Blockchain Technology
+
+Key terms:
+- Smart home: single family, intelligent households consisting of many IoT devices and subsystems like security system, control system, home theatre, etc. 
+
+
+All devices are managed by transactions and stored in the local blockchain. The transactions can be done by local devices communication or between overlay nodes. 
+
+Transactions between devices in a house is protected by symmetric key encryption. 
+
+Every smart home has local blockchain, maintained by one mining node. This mining node is responsible for handling transactions happening inside the house as well as to interact with overlay blockchain. 
+
+Optimization seems to be done by the use of side chain to break the network into smaller shards. 
+
+#####
+Improvement objective: improve authenticity and authorisation of the system
+
+Technical problem: integrity of the security process and data
+
+Affected modules of IoT: authentication and authorisation
+
+Where is BC? Edge and Fog
+
+What is stored on chain? Record of access requests, whitelist of participants 
+
+What runs on chain? Nope
+
+Configuration of BC? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064924630&doi=10.1177%2f1550147719844159&partnerID=40&md5=aad7f036c39551554f38aba9e6772ea3
+https://journals.sagepub.com/doi/pdf/10.1177/1550147719844159
+'File' Attachments: internal-pdf://1960709859/S-2019-SH-BlockCC_ A secure and efficient Inte.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1037
+Author: S., Shafeeq, M., Alam and A., Khan
+Year: 2019
+Title: Privacy aware decentralized access control system
+Journal: Future Generation Computer Systems
+Short Title: Privacy aware decentralized access control system
+DOI: 10.1016/j.future.2019.06.025
+Label: Shafeeq:2019:1
+Keywords: ABAC
+Access control
+Blockchain
+Internet of things
+IOTA
+Tangle
+Abstract: "IoT security and privacy have proven to be a significant challenge. The traditional access control protocols are not suitable for IoT mainly due to a massive scale, ubiquitous connectivity and distributed nature. Blockchain based access control approaches provide decentralized security but they involve scalability problem, high transaction fees, a significant delay, and computational overhead that is not acceptable for resource-constrained IoT devices. Moreover, data published on the blockchain are public which is not ideal for many scenarios. In this paper, we proposed a new decentralized access control system based on the Tangle which empowers the users to dictate the access to their resource. In our proposed decentralized access control model the policies and access rights are published on the Tangle which guarantees distributed auditability and prevents the user from fraudulently denying the granted access rights. The main contribution of the paper is to provide privacy of the policy by leveraging Masked Authenticated Messaging (MAM) data communication protocol. The proposed work is validated by implementation and is tested with AVISPA tool which confirms security in the presence of the intruder. © 2019 Elsevier B.V."
+Notes: Privacy aware decentralized access control system
+
+Key terms:
+- RO: resource owner
+- SR: service requester
+- ABAC: Attribute based access control
+- PDP: Policy decision point
+- PEP: Policy enforcement point
+- PIP: Policy information point
+
+Motivation:
+- Centralized access control protocols are not good for IoT because of the scale, ubiquity, and distributed nature of IoT
+- Blockchain can provide decentralised security
+
+This paper proposes a decentralized access control based on Tangle and MAM. It aims to deal with the privacy and cost problem associated with using blockchain. 
+
+Resource owners are responsible for defining access policy and enforcing the policy (via granting access tokens). These policies are defined using attribute-based access control. 
+
+The Tangle is used to store access control policies. The MAM feature of Tangle is used to encrypt the policies. 
+
+#####
+Improvement objective: improve the security of the system in terms of authorisation 
+
+Technical problem: decentralisation of security operation related to authorisation and authorisation policies
+
+Affected module: Authorization manager
+
+Where is BC deployed? Cloud
+
+What is stored? Access policies
+
+What runs on chain? Nope
+
+Configuration of BC? One Tangle
+
+Any optimization? Nope. We can say that the use of Tangle is the optimisation.
+'File' Attachments: internal-pdf://0076065818/S-2019-Privacy aware decentralized access cont.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1023
+Author: S.K., Pinjala and K.M., Sivalingam
+Year of Conference: 2019
+Title: DCACI: A decentralized lightweight capability based access control framework using iota for internet of things
+Conference Name: "IEEE 5th World Forum on Internet of Things, WF-IoT 2019 - Conference Proceedings"
+Short Title: DCACI: A decentralized lightweight capability based access control framework using iota for internet of things
+DOI: 10.1109/WF-IoT.2019.8767356
+Label: Pinjala:2019:1
+Keywords: Blockchain
+Capability Based Access Control
+Internet of Things.
+IOTA
+Abstract: "Security and Privacy are some of the important aspects to be considered in the large-scale deployment of Internet of Things (IoT) systems. Due to the large number of IoT devices and the different administrative domains in which they operate, traditional approaches involving a Centralized server for managing Authorizations will not be scalable or efficient. In this paper, we propose a Decentralized Capability-Based Access Control framework using IOTA (DCACI); IOTA is an open-source distributed ledger that enables fee-less micro transactions for the IoT. The DCACI framework enables complete privacy and integrity of the Capability tokens using IOTA's Masked Authenticated Messaging (MAM) technology. It enables device owners and users to Grant, Update, Delegate and Revoke the capability tokens. The proposed DCACI framework has been implemented as a proof-of-concept on a resource constrained machine; the results indicate that it is capable of scaling up to large-scale infrastructure such as a Smart City, having millions of IoT devices. © 2019 IEEE."
+Notes: DCACI: A Decentralized Lightweight Capability Based Access Control Framework using IOTA for Internet of Things
+
+Key terms:
+- Authorization: the process of providing the right access to authorised users
+- Access control: how the authorisation rules are laid out and enforced. 
+- Capability Based Access Control: issuing capability tokens to users that identify (user, allowed action) on a resource. Some contextual conditions can be embedded on the token, such as (place, time of access, etc. )
+
+The proposed platform aims to be a common platform for enforcing access control across various independent domains without mutual trust established before hand. 
+
+The proposed platform uses IOTA with MAM feature to store:
+- Issued capability tokens
+- Delegation of capability tokens
+
+##### 
+Improvement objectives: security of the system, in terms of authorisation and access control
+
+Technical problem: decentralisation of the process and the data involving in the access control process
+
+Affected module: Authorization / access control manager
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Issued tokens and their delegation history
+
+What runs on chain? Nope
+
+Configuration of BC? One IOTA 
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85073911895&doi=10.1109%2fWF-IoT.2019.8767356&partnerID=40&md5=d53c777edc8ef8a81188a28026524424
+https://ieeexplore.ieee.org/document/8767356/
+'File' Atttachments: internal-pdf://0352406216/08767356.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1021
+Author: U., Javaid, M.N., Aman and B., Sikdar
+Year of Conference: 2019
+Title: DrivMan: Driving trust management and data sharing in VANETs with blockchain and smart contracts
+Conference Name: IEEE Vehicular Technology Conference
+Short Title: DrivMan: Driving trust management and data sharing in VANETs with blockchain and smart contracts
+DOI: 10.1109/VTCSpring.2019.8746499
+Label: Javaid:2019:1
+Keywords: Blockchain
+Certificate authority (CA)
+Intelligent transportation system (ITS)
+Physical unclonable function (PUF)
+Smart contract
+Vehicular ad-hoc network (VANET)
+Abstract: "The development of Internet of Things (IoT) has paved way for the Internet of Vehicles (IoV) and intelligent transportation systems (ITS). Vehicular ad-hoc networks (VANETs) are indispensable for ITS with intelligent vehicles (IV) as their key players. To ensure proper and reliable VANET operation, IVs need secure inter- and intra-network communication with trust and reliability of data (provenance). This paper aims to provide trust management in VANETs by proposing a trustless system model using blockchain and a certificate authority (CA) for registering IVs as well as revoking their registration if need be. Furthermore, to preserve data reliability, this paper uses physical unclonable functions (PUFs). Implementation of DrivMan shows that it is able to establish distributed trust management and enables secure data sharing while preserving the privacy of IVs. © 2019 IEEE."
+Notes: DrivMan: Driving Trust Management and Data Sharing in VANETs with Blockchain and Smart Contracts
+
+[Thoughts] This paper deserves to go back and do some serious thinking later. 
+
+Key Terms:
+- VANET: Vehicular Ad-hoc Network
+- IV: Intelligent Vehicle
+- PUF: Physical Unclonable Functions - a hardware security primitive. 
+
+IVs need secure inter- and intra-network communication with trust and reliability of data (provenance). 
+
+Each IV has:
+- An account on BC
+- A pair of keys for encrypted V2V and V2I communication
+
+RSU acts as Certificate Authority (CA). They are responsible for registering and deleting IV registrations (I.e., issuing and revoking certificates for authentication). 
+
+Certificate to IV contains:
+- Expiration date
+- Crypto finger print
+- Public key of an IV
+
+This work uses two smart contracts, namely SC1 and SC2. 
+- SC1 is a public contract that interacts with RSU. It ensures that the data generated by IV is coming from a trusted source
+- SC2 is responsible for storing and retrieving data fro the blockchain. In other words, it is the registry. This is a private contract, can only be called by SC1. 
+
+SC1 includes the following functions:
+- reg.IV_device(adds)
+- del.IV_device(addr)
+- issue_certificate
+
+Blockchain in this work are hosted on RSU. These units act as full nodes and miners.
+
+Threat model:
+- Adversary is able to inject, replay, modify, drop, and eavesdrop on V2V and V2I communications.
+- The objectives of an adversary are to impersonate and IV and transfer maliciously modified data to the RSU and to tamper or modify the data sent by legitimate IV. 
+
+This work assumes that every IV has an integrated PUF, which gives them a unique crypto ID. The use of PUF makes vehicles immune to physical attacks. 
+
+For IV to interact with the DrivMan network they need to register themselves to the network. IVs can only send data after being registered with the network (i.e., being given a certificate).
+
+IVs are registered using their unique PUF. 
+
+The blockchain maintains:
+- A registry of IV
+- The unique challenge-response pairs of the registered vehicles
+- A registry of certificates assigned to vehicles
+
+When an IV transmits data, CS1 does the following: 
+- Check if the IV has been registered. The link would be terminated if it is not. 
+- A PUF challenge is sent to the IV as a form of authentication. 
+- After two checks, the CA issues a certificate to the IV, which is then used for its future authentication. 
+
+
+#####
+Improvement objective: improve the authentication of vehicles and the integrity of the authentication data 
+
+Technical challenge: decentralise the operation
+
+Affected modules: authentication manager, certificate issuer
+
+Where is BC deployed? Fog
+
+What is stored on chain? List of registered devices and their unique physical characteristics, list of issued certificates
+
+What runs on chain? Logic to authenticate devices and issue certificates
+
+Configuration? One Ethereum network.
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85068782025&doi=10.1109%2fVTCSpring.2019.8746499&partnerID=40&md5=902dc5c49a7f512a302eb3df90c9704a
+https://ieeexplore.ieee.org/document/8746499/
+'File' Atttachments: internal-pdf://0631704563/08746499.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1026
+Author: V.A., Siris, D., Dimopoulos, N., Fotiou, S., Voulgaris and G.C., Polyzos
+Year of Conference: 2019
+Title: Trusted D2D-based IoT resource access using smart contracts
+Conference Name: "20th IEEE International Symposium on A World of Wireless, Mobile and Multimedia Networks, WoWMoM 2019"
+Short Title: Trusted D2D-based IoT resource access using smart contracts
+DOI: 10.1109/WoWMoM.2019.8793041
+Label: Siris:2019:1
+Keywords: Blockchains
+Constrained IoT devices
+Delegated authorization
+Distributed ledgers
+Abstract: "We present and evaluate models that allow clients to access IoT resources using secure and trusted device-to-device (D2D) communication, while utilizing smart contracts to obtain the benefits of blockcain technology. These benefits include decentralized trust, immutability, transparency, and high availability. The models consider different network connection capabilities of the clients and the IoT resources, namely continuous network connectivity and D2D-only connectivity. We describe two approaches for utilizing blockchains and smart contracts in the authorization process: in the first approach, only hashes of the authorization information are recorded on the blockchain. In the second approach, a smart contract handles authorization requests. We implement the approaches using the OAuth 2.0 delegated authorization framework and evaluate the implementations on the public Ethereum testnet Rinkeby, in terms of execution cost, contract creation cost, and delay. Our evaluation quantifies the tradeoffs of blockchain cost and smart contract functionality, such as blocking and non-blocking operation, and the reduction of the transaction cost that can be achieved when multiple authorization requests are concatenated in a single transaction. © 2019 IEEE."
+Notes: Trusted D2D-based IOT Resource Access using Smart Contracts
+
+Key terms:
+- Secure: keeping the authorisation information that needs to be exchanged confidential
+- Trusted: all entities performing the actions intended by their owners
+
+The goal of this paper is evaluate different architectures for providing delegated authorisation using smart contracts. 
+
+The idea is that IOT devices can interact directly with each other via D2D link such as direct bluetooth. Thus, IoT devices need to have mechanism to assert whether the their counterpart has the proper authorisation to carry out an activity, such as opening a door. This can be done by exchanging an authorisation token. 
+
+Elements of the system:
+- Client
+- IoT resource
+- Client Authorisation Server
+- Authorization Server (Used by IOT resource)
+- Blockchain linking CAS and AS
+
+From what I see, blockchain is used to facilitate the exchange of cryptocurrency for access to IOT resources, in terms of Authorization tokens. 
+
+#####
+Improvement objective: authorisation of the system, thus increasing security, facilitate exchange of IoT resources
+
+Technical problem? Facilitate the exchange in secure manner
+
+Affected module: Business process, authorisation manager
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Records related to the exchange, either in form of hashes or the transactions
+
+What runs on chain? Authorization logic and business logic of the exchange
+
+Configurations of BC? One Ethereum
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85071510667&doi=10.1109%2fWoWMoM.2019.8793041&partnerID=40&md5=0c9b0e51d300385272ef19345ccbbbff
+https://ieeexplore.ieee.org/document/8793041/
+'File' Atttachments: internal-pdf://3520709988/08793041.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1020
+Author: Y., Ren, F., Zhu, J., Qi, J., Wang and A.K., Sangaiah
+Year: 2019
+Title: Identity management and access control based on blockchain under edge computing for the industrial internet of things
+Journal: Applied Sciences (Switzerland)
+Short Title: Identity management and access control based on blockchain under edge computing for the industrial internet of things
+DOI: 10.3390/app9102058
+Label: Ren:2019:1
+Keywords: Access control
+Edge computing
+Identity management
+Industrial internet of things
+Abstract: "Edge computing provides a unified platform for computing, networking, and storage resources, enabling data to be processed in a timely and effcient manner near the source. Thus, it has become the basic platform for industrial Internet of things (IIoT). However, computing0s unique features have also introduced new security problems. To solve the problem, in this paper, blockchain-based identity management combining access control mechanism is designed under edge computing. The self-certified cryptography is utilized to realize the registration and authentication of network entities. We bind the generated implicit certificate to its identity and construct the identity and certificate management mechanism based on blockchain. Secondly, an access control mechanism based on Bloom filter is designed and integrated with identity management. Moreover, for secure communication in resource-constrained edge devices, a lightweight secret key agreement protocol based on self-authenticated public key is constructed. These mechanisms work together to provide data security guarantees for IIoT such as authentication, auditability, and confidentiality. © 2019 by the authors."
+Notes: Identity Management and Access Control Based on Blockchain under Edge Computing for the Industrial Internet of Things 
+
+Key terms:
+- Self-certified public key based system (SCKBS): the public key itself has an authentication function. Key distribution centres can generate partial private keys corresponding to user identities; however users themselves are responsible for combining private keys to obtain a complete private key, and generate the corresponding public key. 
+
+Essentially, this work aims to decentralise the identity management and access control mechanisms, by applying blockchain technologies. 
+
+The blockchain network runs on fog nodes. 
+
+In this proposed scheme, each entity has a unique identity, which is its implicit certificate. These certificates are stored in blockchain network. 
+
+The edge centres also store the access policy of its nodes on the blockchain. 
+
+##### 
+Improvement objectives: improve the security of the system in terms of authenticity and authorisation
+
+Technical problem: integrity of the data records, decentralisation
+
+Affected modules of IoT: Authentication and authorisation manager
+
+Where is BC deployed? Fog
+
+What is stored on chain? Identity and certificates of devices, as well as access policies
+
+What runs on chain? Nope
+
+Configuration of BC? Nope
+
+Optimisation? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85066459796&doi=10.3390%2fapp9102058&partnerID=40&md5=bcbceb1a0db068d8d73eee0fb5555c1b
+https://res.mdpi.com/d_attachment/applsci/applsci-09-02058/article_deploy/applsci-09-02058-v2.pdf
+'File' Attachments: internal-pdf://3617318125/Y-2019-Identity management and access control.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1027
+Author: Y., Wang, Z., Su and N., Zhang
+Year: 2019
+Title: Bsis: Blockchain-based secure incentive scheme for energy delivery in vehicular energy network
+Journal: IEEE Transactions on Industrial Informatics
+Short Title: Bsis: Blockchain-based secure incentive scheme for energy delivery in vehicular energy network
+DOI: 10.1109/TII.2019.2908497
+Label: Wang:2019:1
+Keywords: Blockchain
+Electric vehicles (evs)
+Proof of reputation (por)
+Vehicular energy network (ven)
+Wireless power transfer
+Abstract: "Vehicular energy network (VEN), as an important part of the Internet of Things for the smart city, can facilitate the renewable energy (RE) transportation over a large geographical area by means of electric vehicles (EVs) through wireless power transfer technology. However, due to the potential security vulnerability in VEN, EV users can be attacked by external or internal adversaries. In addition, owing to the selfishness of EVs, it is a great challenge to optimally schedule the charging/discharging behaviors of EVs to realize regional energy balance in VEN. To tackle the above issues, this paper proposes a blockchain-based secure incentive scheme for energy delivery in VEN. First, a novel permissioned energy blockchain system is introduced in VEN to implement secure energy delivery services for EVs and energy nodes through the use of distributed ledgers and cryptocurrency. Second, a proof of reputation consensus protocol is proposed to efficiently reach consensus in energy blockchain, where the reputation derivation is constructed based on the local trust computing and credibility computing. Third, motivated by the pricing mechanism, an incentive model is developed to stimulate EVs to cooperatively deliver RE to various areas with different electricity loads while maximizing EVs' utilities. Finally, extensive numerical results are provided, which demonstrate the efficiency of the proposed scheme through the comparison with conventional schemes. © 2005-2012 IEEE."
+Notes: BSIS: Blockchain-based Secure Incentive Scheme for Energy Delivery in Vehicular Energy Network
+
+Key terms:
+- Vehicular Energy Network (VEN): a system comprising wireless charging / discharging pads installed on the street and connected to energy storage (i.e., energy nodes). Using this system, passing EV can charge and discharge automatically. 
+- Energy blockchain: a continuously growing sequence of hash-chained blocks, which record energy transactions among energy entities. 
+
+Blockchain is used to deal with the problem arising from using centralised platform for managing VEN.
+
+This work assumes that the built -in smart meters of EV and energy nodes are trusted. 
+
+EV stores only metadata of the blocks, while energy nodes store full ledgers.
+Any how, this is still an edge-based deployment in my book. 
+
+Attack model:
+- Refusing to pay: I think of this as repudiation.
+- Node impersonation: a malicious node pretends to be another one. 
+- Malicious trust centre: tampering participants’ reputation value for profits
+- Sybil attack and reentry attack
+
+This work uses permissioned chain, meaning that all EV and energy node must register with a CA by binding their real-world identity with on-chain identity (i.e., public key)
+
+4 types of participants:
+- Proposer: responsible for transmitting the block to the rest of the network. This node is chosen from validators
+- Validators: authorised node who can participate in the consensus protocol to agree upon the next block
+- Candidate: energy nodes, which has the chance to become validators
+- Follower
+
+Node with higher reputation has a higher probability of being chosen to be validators. 
+
+Each legitimate node maintains its own copy of the reputation values of all candidates. 
+
+Process of purchasing energy:
+- Before reaching an intersection with charging pad, the vehicle send a request to the energy node
+- The energy node verifies the request, and make a price proposal, and send everything back via a symmetric encrypted channel
+- The vehicle checks and decides whether it accepts the offer. If it does, send ACK.
+- After receiving ACK, the energy node provides charging or discharging service for the EV as agreed
+- The energy node generates an energy transaction, recording the exchange of energy
+- Each EV gives a rating to the energy node and generate a rating transaction
+
+Reputation and service record transactions are stored on BC. 
+
+All logic are done off-chained.
+
+#####
+Improvement objective: improve security of the system in terms of integrity and non-repudiation, facilitate the exchange of resources in IoT system
+
+Technical problem: decentralisation of operation and trust management
+
+Affected module: record database of transactions, reputation record
+
+Where is BC? Edge
+
+What is stored on chain? Exchange record and reputation record
+
+What runs on chain? Nope
+
+Optimization? Proof-of-Reputation to avoid PoW.
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85067334318&doi=10.1109%2fTII.2019.2908497&partnerID=40&md5=d475f43c167702ebe5697b21fc4e4d86
+https://ieeexplore.ieee.org/document/8678450/
+'File' Attachments: internal-pdf://3264626266/08678450.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1017
+Author: Y., Zhu, G., Zheng and K.-K., Wong
+Year: 2019
+Title: Blockchain-empowered decentralized storage in air-to-ground industrial networks
+Journal: IEEE Transactions on Industrial Informatics
+Short Title: Blockchain-empowered decentralized storage in air-to-ground industrial networks
+DOI: 10.1109/TII.2019.2903559
+Label: Zhu:2019:1
+Keywords: Blockchain
+Cournot model
+Industrial internet of thing (iot)
+smart contract
+Stochastic geometry
+Abstract: "Blockchain has created a revolution in digital networking by using distributed storage, cryptographic algorithms, and smart contracts. Many areas are benefiting from this technology, including data integrity and security, as well as authentication and authorization. Internet of Things (IoTs) networks often suffers from such security issues, which is slowing down wide-scale adoption. In this paper, we describe the employing of blockchain technology to construct a decentralized platform for storing and trading information in the air-to-ground IoT heterogeneous network. To allow both air and ground sensors to participate in the decentralized network, we design a mutual-benefit consensus process to create uneven equilibrium distributions of resources among the participants. We use a Cournot model to optimize the active density factor set in the heterogeneous air network and then employ a Nash equilibrium to balance the number of ground sensors, which is influenced by the achievable average downlink rate between the air sensors and the ground supporters. Finally, we provide numerical results to demonstrate the beneficial properties of the proposed consensus process for air-to-ground networks and show the maximum active sensor's density utilization of air networks to achieve a high quality of service. © 2005-2012 IEEE."
+Notes: Blockchain-empowered Decentralized Storage in Air-to-Ground Industrial Networks
+
+Key terms:
+- Air Sensor (AS): collect data in the sky at different altitudes. Because of the limited caching space and computation, the active ASs broadcast the data to the ground network. 
+- Ground sensors (GS) provide storage space for the active ASs according to their QoS function in exchange for coins. 
+
+Two incentive schemes:
+- Individual Reward Scheme (IRS): reward robust GS individually
+- Group reward scheme (GRS): the reward is shared among all GS that serves the same tier of AS
+
+The smart contract also acts as an escrow, requiring AS to deposit money to prove that they have the ability to finish the payment. 
+
+#####
+Improvement objective: facilitate the exchange of IoT resource, in this case storage, between participants
+
+Technical problem: incentive scheme
+
+Affected modules: business process manager
+
+Where is BC deployed? Edge
+
+What is stored? Records of the exchange
+
+What runs on chain? Logic of the exchange
+
+Configuration of BC? Nope
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85067046765&doi=10.1109%2fTII.2019.2903559&partnerID=40&md5=755fd9dc5f67f26a5024f289d76438e8
+https://ieeexplore.ieee.org/document/8662639/
+'File' Attachments: internal-pdf://2550207930/08662639.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1014
+Author: Y., Zhao, Y., Liu, A., Tian, Y., Yu and X., Du
+Year: 2019
+Title: Blockchain based privacy-preserving software updates with proof-of-delivery for Internet of Things
+Journal: Journal of Parallel and Distributed Computing
+Short Title: Blockchain based privacy-preserving software updates with proof-of-delivery for Internet of Things
+DOI: 10.1016/j.jpdc.2019.06.001
+Label: Zhao:2019:1
+Keywords: Attribute-based signatures
+Blockchain
+IoT
+Privacy-preserving
+Software update
+Abstract: "A large number of IoT devices are connected via the Internet. However, most of these IoT devices are generally not perfect-by-design even have security weaknesses or vulnerabilities. Thus, it is essential to update these IoT devices securely, patching their vulnerabilities and protecting the safety of the involved users. Existing studies deliver secure and reliable updates based on blockchain network which serves as the transmission network. However, these approaches could compromise users privacy when updating the IoT devices. In this paper, we propose a new blockchain based privacy-preserving software update protocol, which delivers secure and reliable updates with an incentive mechanism while protects the privacy of involved users. A vendor delivers the updates and makes a commitment by using smart contract to provide financial incentive to the transmission nodes who deliver the updates to its IoT devices. A transmission node can get financial incentive by providing a proof-of-delivery. In order to obtain the proof-of-delivery, the transmission node uses double authentication preventing signature (DAPS) to carry out fair exchange. Specifically, the transmission node uses the DAPS to exchange an attribute-based signature (ABS) of one IoT device. Then, it uses the ABS as proof-of-delivery to receive financial incentives. Generally, to generate an ABS, the IoT device has to execute complex computations which is intolerable for resource limited devices. We propose a concrete outsourced attribute-based signature (OABS) scheme to overcome the weakness. Then, we prove the security of the proposed OABS and the protocol. Finally, we implement smart contract in Solidity to demonstrate the validity of the proposed protocol. © 2019 Elsevier Inc."
+Notes: Blockchain based privacy preserving software updates with proof-of-delivery for Internet of Things
+
+Key terms:
+- Double authentication preventing signature (DAPS)
+- Attribute-based Signature (ABS)
+
+Participants in the system:
+- Vendor: providers of devices and updates. Vendors can also act as miners to verify transactions in the blockchain network. 
+- Transmission nodes: brokers, acting competitively to find targets and delivers the updates to IoT devices to obtain financial incentives. 
+- IoT gateway: routers connecting IoT devices to the network and assisting IoT devices to update and compute. 
+- IoT devices: physical devices such as embedded devices and smartphones. 
+
+The blockchain-based privacy-preserving software update model composes a tuple of polynomial time algorithms:
+- Setup(k): take parameters k as inputs and outputs the public parameters
+- KeyGen(params) => (pk, sk): generate key pairs. This is simply ECDSA key pairs.
+- Register(params, pk) => L. This list L is the list of public keys of the transmission nodes wanting to deliver updates for money. 
+- Publish(params, update, sk) => transaction. This function creates a smart contract to govern the delivery of the update. Each update is identified by its hash.
+- Query(params, update) => boolean. This algorithm takes params and updates as input to generate a signature. If the signature is valid, return true. This function allows the transmission node to retrieve the encrypted version of the update, which has been encrypted using the transmission node’s public key. 
+- Notification(Transaction, update) => boolean. Used by IoT gateway to check if the update is on the registry
+- Sign1(params, update, sk) => sigma1
+- Sign2(params, sigma1, sk) => sigma2
+- Receive(params, sigma2, sk) => Transaction
+
+How it works:
+- Vendor maintains a list of devices and burns the device’s secret key into them
+- Transmission nodes register with the vendor to deliver updates to IoT devices for money
+- Vendor publishes an update by using smart contracts to commit financial incentive to transmission nodes that provides proof-of-delivery
+- Transmission nodes download update, which has been encrypted by the transmission node public key
+- Transmission nodes notify the IoT gateway
+- Transmission nodes send the encrypted update with a DAPS to the gateway
+- The gateway verifies the signature and send the encrypted update to the IoT devices
+- IoT devices generate OABS and send to the transmission node
+- When transmission node receives an OABS, it generates a new DAPS
+- The transmission node sends both the DAPS and the OABS to the smart contract to receive the money
+- Using both signatures, the IoT gateway can extract the secret key of the transmission node. It sends the key to IoT devices so that the devices can decrypt the update and install. 
+
+Security requirements of the system:
+- Completeness
+- Anonymity: privacy of IoT devices, meaning the real identity of users are not revealed
+- Proof-of-delivery unforgettability
+- Fairness
+- Authenticity and integrity
+
+Motivation: 
+- Secure update of IoT devices are crucial to patch their vulnerabilities and protect the safety of the involved users
+- Existing blockchain based approach could compromise user’s privacy
+
+Elements of this work: 
+- Use smart contract to incentives transmission nodes to deliver updates to IoT devices
+- Transmission node uses double authenticate preventing signature to carry out fair exchange with IoT devices
+- Devices generate attribute-based signature in exchange for the firmware. This signature is the proof-of-delivery for the transmission node to exchange for financial incentives. 
+- An outsourced attribute-based signature scheme is proposed to overcome the limitation of IoT devices in terms of computing resources. 
+
+This scheme was implemented on Ethereum.
+
+#####
+Improvement objective: security of the system via integrity of patching process and patches
+
+Technical problem: decentralisation and incentivising participants
+
+Affected module: Update incentivising mechanism
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Records of the publishing and exchanges related to the firmware delivery
+
+What runs on chain? Escrow and proof-of-delivery verification
+
+Configuration of BC? One Ethereum network
+
+Any optimization? Nope
+'File' Attachments: internal-pdf://2040651430/Y-2019-Blockchain based privacy-preserving sof.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1022
+Author: Y.-J., Choi, H.-J., Kang and I.-G., Lee
+Year: 2019
+Title: Scalable and secure internet of things connectivity
+Journal: Electronics (Switzerland)
+Short Title: Scalable and secure internet of things connectivity
+DOI: 10.3390/electronics8070752
+Label: Choi:2019:1
+Keywords: Authentication
+Blockchain
+IoT
+Scalability
+Secure
+Whitelist
+Abstract: "The Internet of things (IoT) technology, which is currently considered the new growth engine of the fourth industrial revolution, affects our daily life and has been applied to various industrial fields. Studies on overcoming the limitations of scalability and stability in a centralized IoT operating environment by employing distributed blockchain technology have been actively conducted. However, the nature of IoT that ensures connectivity with multiple objects at any time and any place increases security threats. Further, it extends the influence of the cyber world into the physical domain, resulting in serious damage to human life and property. Therefore, we aim to study a method to increase the security of IoT devices and effectively extend them simultaneously. To this end, we analyze the authentication methods and limitations of traditional IoT devices and examine cases for improving IoT environments by using blockchain technology. Accordingly, we propose a framework that allows IoT devices to be securely connected and extended to other devices by automatically evaluating security using blockchain technology and the whitelist. The method proposed in this paper restricts the extension of devices vulnerable to security risks by imposing penalties and allows only devices with high security to be securely and quickly authenticated and extended without user intervention. In this study, we applied the proposed method to IoT network simulation environments and observed that the number of devices vulnerable to security was reduced by 48.5% compared with traditional IoT environments. © 2019 by the authors."
+Notes: Scalable and Secure Internet of Things Connectivity
+
+This work uses blockchain to maintain immutable records of:
+- Hashes of software agents running on IoT devices for security purpose
+- Whitelist of software allowed for each device type
+- Security score of individual devices
+
+Smart contract is also used to reward manufacturers for updating the whitelist
+
+IoT Device Agent relies on the information on blockchain to decide whether to connect to another device. 
+
+
+#####
+Improvement objective: security in terms of authenticity and security assessment of devices
+
+Technical problem: integrity of the data, incentivise the participation of the manufacturer
+
+Affected modules: device registry, whitelist, security score assessment
+
+Where is BC? Cloud
+
+What is stored? Whitelist of software, hashes of software agents, security score of devices
+
+What run on chain? Calculation of security score, rewarding manufacturers
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85069906596&doi=10.3390%2felectronics8070752&partnerID=40&md5=c63727cfd2333e5b1e5b18e8aacd9e32
+https://res.mdpi.com/d_attachment/electronics/electronics-08-00752/article_deploy/electronics-08-00752-v2.pdf
+'File' Attachments: internal-pdf://2474738230/Y.-J-2019-Scalable and secure internet of thin.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1029
+Author: Y.P., Tsang, K.L., Choy, C.H., Wu, G.T.S., Ho and H.Y., Lam
+Year: 2019
+Title: Blockchain-Driven IoT for Food Traceability with an Integrated Consensus Mechanism
+Journal: IEEE Access
+Short Title: Blockchain-Driven IoT for Food Traceability with an Integrated Consensus Mechanism
+DOI: 10.1109/ACCESS.2019.2940227
+Label: Tsang:2019:1
+Keywords: blockchain
+consensus mechanism
+Food traceability
+Internet of Things
+shelf life management
+Abstract: "Food traceability has been one of the emerging blockchain applications in recent years, for improving the areas of anti-counterfeiting and quality assurance. Existing food traceability systems do not guarantee a high level of system reliability, scalability, and information accuracy. Moreover, the traceability process is time-consuming and complicated in modern supply chain networks. To alleviate these concerns, blockchain technology is promising to create a new ontology for supply chain traceability. However, most consensus mechanisms and data flow in blockchain are developed for cryptocurrency, not for supply chain traceability; hence, simply applying blockchain technology to food traceability is impractical. In this paper, a blockchain-IoT-based food traceability system (BIFTS) is proposed to integrate the novel deployment of blockchain, IoT technology, and fuzzy logic into a total traceability shelf life management system for managing perishable food. To address the needs for food traceability, lightweight and vaporized characteristics are deployed in the blockchain, while an integrated consensus mechanism that considers shipment transit time, stakeholder assessment, and shipment volume is developed. The data flow of blockchain is then aligned to the deployment of IoT technologies according to the level of traceable resource units. Subsequently, the decision support can be established in the food supply chain by using reliable and accurate data for shelf life adjustment, and by using fuzzy logic for quality decay evaluation. © 2013 IEEE."
+Notes: Blockchain-Driven IoT for Food Traceability with an Integrated Consensus Mechanism
+
+Key terms:
+- PFSC: Perishable food supply chain
+- TRU: Traceable resource units, which are used to identify and mutually understand traceable objects. Some TRUs include trade unit, logistics unit, and production unit.
+
+This paper claims that most consensus mechanisms and data flow in blockchain are developed for cryptocurrency, not for supply chain traceability; hence, simply applying blockchain technology to food traceability is impractical. Specifically, this paper raises two issues with applying blockchain as is:
+- Storing all real-time data along the supply chain in the blockchain is ineffective, causing the block time long.
+- Using blockchain for unlimited time consumes too much space. 
+
+This paper particularly target the e-commerce scenarios, where customers cannot tough the items when purchasing and thus have to rely on the information provided by the e-shops. 
+
+The use of blockchain seems to be for immutability of at rest data and for the integration of different silos. 
+
+Two challenges of perishable food supply chain traceability:
+- Hard to define the traceable resource units as the food items move across supply chain.
+- Information of the food items that the users can access is not always trustworthy. 
+
+The proposed scheme uses IoT to monitor the environment in which multiple TRUs exist, such as a warehouse. 
+
+The collected IoT data is stored in a cloud database.
+
+The key pointing to IoT data payload on the cloud and food life cycle events are managed by blockchain. 
+
+Based on the IoT data in the cloud and the life cycle data in the blockchain, fuzzy logic can be applied to determine food shelf life and evaluate its quality decay. 
+
+To make the blockchain more “lightweight”, this work replaces PoW with a variant of PoS, called Proof of Supply Chain Share. 
+- Validators generate new blocks.
+- Validators are stake holders in the food supply chain. 
+- Responsibility and share of supply chain parties are aggregated into a normalised supply chain share to decide the creator of a new block. 
+
+This paper proposes to generate smart contracts when customers purchase perishable foodstuffs to acknowledge the purchase and provide entitlement to access food traceability records. 
+
+After all foodstuffs tracked by a blockchain are purchased, the blockchain is removed from memory and archived in a cloud to save the active memory of the blockchain infrastructure. 
+
+#####
+Improvement objective: increase security of the system in terms of integrity of data and enable interoperability between silos
+
+Technical problems: maintain trustworthy record of the data without tampering
+
+Affected modules: data registry
+
+Where is BC deployed? Cloud
+
+What is stored? Index pointing to data entry stored off chain
+
+What runs on chain? Nope
+
+Configuration of BC? In-house BC, built on a PoS based consensus called Proof of Supply Chain share
+
+Any optimization? Reduce memory consumption of BC by closing the chain after the products have been bought, store only pointers to data to reduce the amount of data on chain, replace PoW with PoS.
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075933670&doi=10.1109%2fACCESS.2019.2940227&partnerID=40&md5=e550b313e3461db7ba92b074532d547b
+https://ieeexplore.ieee.org/ielx7/6287639/8600701/08830460.pdf?tp=&arnumber=8830460&isnumber=8600701&ref=
+'File' Attachments: internal-pdf://0111537764/Y.P-2019-Blockchain-Driven IoT for Food Tracea.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1019
+Author: Z., Huang, K., Suankaewmanee, J., Kang, D., Niyato and N.P., Sin
+Year of Conference: 2019
+Title: Development of reliable wireless communication system for secure blockchain-based energy trading
+Conference Name: JCSSE 2019 - 16th International Joint Conference on Computer Science and Software Engineering: Knowledge Evolution Towards Singularity of Man-Machine Intelligence
+Short Title: Development of reliable wireless communication system for secure blockchain-based energy trading
+DOI: 10.1109/JCSSE.2019.8864210
+Label: Huang:2019:1
+Abstract: "Blockchain technology is being developed rapidly in recent years. It has been applied to stock trading, supply chain auditing, crowd-funding, energy trading, and Internet-of-Things. Specifically, in Internet-of-Things applications, how the data is transmitted before reaching a blockchain platform reliably is a challenging issue. In this paper, we focus on an energy trading scenario with Internet-of-Things blockchain applications for energy trading. In this scenario, energy generated from renewable sources can be traded in a peer-To-peer manner among micro-grids. This requires a high level of data communication reliability. Blockchain is adopted as an effective decentralized transaction management solution. In particular, we propose a proof-of-concept for reliable data transmission from smart meters to the blockchain based on Sigfox technology and the Ethereum. To enhance reliability, we configure the base station antenna as a block-based mode and propose a physical data layer for wireless communication. We perform extensive experiments to evaluate the performance of the proposed wireless communication system for the blockchain. © 2019 IEEE."
+Notes: Development of Reliable Wireless Communication System for Secure Blockchain-based Energy Trading
+
+Key terms: 
+- 3 types of entities in the energy trading markets: Sellers, buyers, and sensor nodes. 
+- Sellers: building with energy harvesting devices, such as solar panels. 
+- Buyers buy energy from the sellers via microgram. 
+- Sensor nodes collect data including energy status of energy storage and energy trading transactions, and upload them to the blockchain network. 
+- Smart meter: an electronic device that records consumption of electricity and communicates the information to the electricity supplier for monitoring and billing. 
+
+The proposed system has three layers:
+- Sensing layer: smart meters and Sigfox communication modules
+- Transmission layer: Sigfox base station and Sigfox cloud. 
+- Blockchain layer: blockchain network with smart contracts
+
+Sensor reading: produced energy, consumed energy, radiance. These readings are sent every 15 minutes. 
+
+The blockchain stores smart meter data and energy transactions. 
+
+Sensor nodes (i.e., smart meters) are Arduino boards equipped with Sigfox transceivers. These transceivers broadcast the readings to nearby base station, which then upload the data to a private cloud running SigFox cloud systems. 
+
+A mining node uses API to retrieve the readings from the SigFox cloud and upload them to the Blockchain. 
+
+Smart contract will be triggered automatically, periodically to retrieve all sensor data from the Sigfox cloud and upload the data to the blockchain. 
+
+When a pair of energy buyer and seller finished an energy trading action, the transactions records are added to the blockchain. 
+
+The blockchain used is Ethereum. 
+
+Main functions of the smart contracts:
+- Adding SigFox’s information to the smart contract.
+- Recording SigFox’s sensing data to the smart contract
+- Querying the SigFox sensing data from the smart contract
+- Setting the energy to sell
+- Confirming to buy the energy 
+
+#####
+Improvement objective: improve security of the data at rest in terms of integrity, facilitate ownership and exchange of IoT resources (electricity)
+
+Technical problem: decentralisation of the storage of data
+
+Affected IoT module: data store, transaction registry
+
+Where is BC deployed? Cloud
+
+What is stored on chain? Transaction details, sensor data 
+
+What runs on chain? Business logic of the exchange 
+
+Configurations of BC? One Ethereum
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074221632&doi=10.1109%2fJCSSE.2019.8864210&partnerID=40&md5=d0cfd48a0886e2b53c6b4f76838f9d57
+https://ieeexplore.ieee.org/document/8864210/
+'File' Atttachments: internal-pdf://3211441676/08864210.pdf
+
+
+Reference Type:  Journal Article
+Record Number: 1028
+Author: Z., Li, Z., Yang, S., Xie, W., Chen and K., Liu
+Year: 2019
+Title: Credit-Based Payments for Fast Computing Resource Trading in Edge-Assisted Internet of Things
+Journal: IEEE Internet of Things Journal
+Short Title: Credit-Based Payments for Fast Computing Resource Trading in Edge-Assisted Internet of Things
+DOI: 10.1109/JIOT.2019.2908861
+Label: Li:2019:1
+Keywords: Computing resource trading
+double auction
+edge computing
+Internet of Things (IoT)
+loan
+Abstract: "The introduction of edge computing into blockchain-enabled Internet of Things (IoT) for offloading computational tasks is attracting increasing attention. Computing resource trading unavoidably happens in edge-assisted IoT. However, efficient computing resource trading cannot be achieved because of the 'cold start' and 'long return' problems. To address these challenges, we propose to use a credit-based payment for fast computing resource trading in edge-assisted blockchain-enabled IoT; therefore, the IoT nodes can finish fast payment and frequent trading by borrowing resource coins from other IoT nodes based on their credit values. In our resource-coin loan problem, we propose an iterative double-auction-based algorithm, where a broker is introduced to solve the loan allocation problem and to determine the size of the loan each lender would provide to each borrower. Furthermore, the broker enforces specific loan pricing rules to induce the borrowers and lenders to bid truthfully. Then, the hidden privacy information could be extracted to achieve the optimal resource-coin allocation and loan pricing. The proposed algorithm can maximize the economic benefits while protecting privacy. Simulations showed that the proposed algorithm can maximize social welfare. In addition, we compared the proposed algorithm with the credit-bank-based method in terms of the satisfaction function and payments. The experimental results demonstrated that the proposed algorithm was individually rational, truthful, and budget-balanced. © 2014 IEEE."
+Notes: Credit-based payments for fast computing resource trading in edge-assisted internet of things
+
+Key term:
+- Blockchain-based edge assisted IoT: IoT devices offload computation-intensive tasks to edge servers, and use BC to facilitate the trade of resources. 
+- Cold start: newly added IoT node has no resource coin to buy resources
+- Long return: auditing and verifying transaction records for new blocks in the consensus process would take long time. 
+
+This work focuses on providing an optimal loan allocation to facilitate resource trading in IoT systems. 
+
+IoT nodes can borrow resource coins from neighbouring IoT nodes based on their credit values to  complete fast payment and frequent trading. 
+
+Entities in the resource-coins loan system:
+- Edger server: play the role of resource-coin lenders with surplus resource coins and can provide the coins to IoT devices to gain revenue
+- IoT devices: either borrower or lenders
+- Broker: works as auctioneer to execute a double-auction scheme for optimising resource-coin allocation and loan pricing. 
+
+#####
+Improvement objective: facilitate resource exchange between devices
+
+Technical problem: incentivise the exchange of resources
+
+Affected modules of IoT: business process manager
+
+Where is BC deployed? Edge
+
+What is stored on chain? Records of exchanges, in this case records of the request and response for loan
+
+What runs on chain? N/A
+
+Configuration of BC? N/A
+
+Optimisation? N/A
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85066292107&doi=10.1109%2fJIOT.2019.2908861&partnerID=40&md5=a619fbb2e85eea186cdf802aaaedce5c
+https://ieeexplore.ieee.org/document/8680626/
+'File' Attachments: internal-pdf://3138376569/08680626.pdf
+
+
+Reference Type:  Conference Proceedings
+Record Number: 1024
+Author: Z., Zinonos, P., Christodoulou, A., Andreou and S., Chatzichristofis
+Year of Conference: 2019
+Title: ParkChain: An IoT parking service based on blockchain
+Conference Name: "Proceedings - 15th Annual International Conference on Distributed Computing in Sensor Systems, DCOSS 2019"
+Short Title: ParkChain: An IoT parking service based on blockchain
+DOI: 10.1109/DCOSS.2019.00123
+Label: Zinonos:2019:1
+Keywords: Applications
+Blockchain
+Internet of Things
+Parking application
+Abstract: "The IoT ecosystem is evolving quickly, developing several applications in different sectors. The majority of these applications use centralized infrastructures something that poses several challenges especially related to trust and data security. Recently, blockchain has been introduced as an effective solution to IoT applications trying to provide solutions to these challenges. In this paper, we introduce a new decentralized IoT application using blockchain technology, namely, ParkChain. The ParkChain application operates in a way that no one can delete, revert, hack or question the time a registered vehicle securely entered a parking area. In order to evaluate ParkChain, we have implemented the smart contract on top of Ethereum Blockchain along with a traditional Image Processing / Computer Vision approach for License Plate Recognition, and using a Raspberry Pi we control the access on a parking place. We report on several experiments that assess the performance of ParkChain application. © 2019 IEEE."
+Notes: ParkChain: An IoT Parking Service Based on Blockchain
+
+This work uses blockchain to maintain tamper-proof and non-repudiable records of parking. 
+
+Admin uses the blockchain smart contract to authorise cars to enter a car park. 
+
+When the authorised car arrives at the car park, the camera at the car park uses computer vision techniques to recognise the car, and then send the transaction to the smart contract asking for the gate to open, and register the entrance of the car on the blockchain. Such record is then immutable. 
+
+If the car is authorised, the smart contract will switch state to let the car in, and thus allowing for the car to enter. 
+
+Public Ethereum was used. 
+
+Each time a car enter the parking space, it costs 0.07 US dollar. 
+
+##### 
+Improvement objective: improve security of the system in terms of integrity and non-repudiation of the records
+
+Technical problem: security of the data at rest
+
+Where is BC deployed? Cloud
+
+Affected module? Process orchestrator and event record
+
+What is stored on chain? List of authorised cars, list of events regarding car parking
+
+What runs on chain? Authorization logic
+
+Configuration of BC? Public Ethereum
+
+Any optimization? Nope
+URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85071942101&doi=10.1109%2fDCOSS.2019.00123&partnerID=40&md5=c27aac0ba5601affd89260b893f82c1b
+https://ieeexplore.ieee.org/document/8804765/
+'File' Atttachments: internal-pdf://2260289377/08804765.pdf
+
+
