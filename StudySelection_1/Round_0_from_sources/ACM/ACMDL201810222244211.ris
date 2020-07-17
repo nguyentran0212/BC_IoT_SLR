@@ -1,0 +1,805 @@
+%0 Conference Paper
+%1 3098442
+%A Marco Conoscenti
+%A Antonio Vetr&#242;
+%A Juan Carlos De Martin 
+%T Peer to peer for privacy and decentralization in the internet of things
+%B Proceedings of the 39th International Conference on Software Engineering Companion
+%@ 978-1-5386-1589-8
+%C Buenos Aires, Argentina
+%P 288-290
+%D 2017
+%R 10.1109/ICSE-C.2017.60
+%I IEEE Press
+
+%0 Conference Paper
+%1 3140263
+%A Arnaud Durand
+%A Pascal Gremaud
+%A Jacques Pasquier 
+%T Decentralized web of trust and authentication for the internet of things
+%B Proceedings of the Seventh International Conference on the Internet of Things
+%@ 978-1-4503-5318-2
+%C Linz, Austria
+%P 1-2
+%D 2017
+%R 10.1145/3131542.3140263
+%I ACM
+
+%0 Conference Paper
+%1 3123157
+%A Andreas Bogner 
+%T Seeing is understanding: anomaly detection in blockchains with visualized features
+%B Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers
+%@ 978-1-4503-5190-4
+%C Maui, Hawaii
+%P 5-8
+%D 2017
+%R 10.1145/3123024.3123157
+%I ACM
+
+%0 Conference Paper
+%1 3152392
+%A Michael A. Walker
+%A Abhishek Dubey
+%A Aron Laszka
+%A Douglas C. Schmidt 
+%T PlaTIBART: a platform for transactive IoT blockchain applications with repeatable testing
+%B Proceedings of the 4th Workshop on Middleware and Applications for the Internet of Things
+%@ 978-1-4503-5170-6
+%C Las Vegas, Nevada
+%P 17-22
+%D 2017
+%R 10.1145/3152141.3152392
+%I ACM
+
+%0 Conference Paper
+%1 3126980
+%A Jun Lin
+%A Zhiqi Shen
+%A Chunyan Miao 
+%T Using Blockchain Technology to Build Trust in Sharing LoRaWAN IoT
+%B Proceedings of the 2nd International Conference on Crowd Science and Engineering
+%@ 978-1-4503-5375-5
+%C Beijing, China
+%P 38-43
+%D 2017
+%R 10.1145/3126973.3126980
+%I ACM
+
+%0 Conference Paper
+%1 3055003
+%A Ali Dorri
+%A Salil S. Kanhere
+%A Raja Jurdak 
+%T Towards an Optimized BlockChain for IoT
+%B Proceedings of the Second International Conference on Internet-of-Things Design and Implementation
+%@ 978-1-4503-4966-6
+%C Pittsburgh, PA, USA
+%P 173-178
+%D 2017
+%R 10.1145/3054977.3055003
+%I ACM
+
+%0 Conference Paper
+%1 3211938
+%A Arnaud Durand
+%A Pascal Gremaud
+%A Jacques Pasquier 
+%T Resilient, crowd-sourced LPWAN infrastructure using blockchain
+%B Proceedings of the 1st Workshop on Cryptocurrencies and Blockchains for Distributed Systems
+%@ 978-1-4503-5838-5
+%C Munich, Germany
+%P 25-29
+%D 2018
+%R 10.1145/3211933.3211938
+%I ACM
+
+%0 Conference Paper
+%1 3131563
+%A Muhammad Salek Ali
+%A Koustabh Dolui
+%A Fabio Antonelli 
+%T IoT data privacy via blockchains and IPFS
+%B Proceedings of the Seventh International Conference on the Internet of Things
+%@ 978-1-4503-5318-2
+%C Linz, Austria
+%P 1-7
+%D 2017
+%R 10.1145/3131542.3131563
+%I ACM
+
+%0 Conference Paper
+%1 2899012
+%A Thomas Hardjono
+%A Ned Smith 
+%T Cloud-Based Commissioning of Constrained Devices using Permissioned Blockchains
+%B Proceedings of the 2nd ACM International Workshop on IoT Privacy, Trust, and Security
+%@ 978-1-4503-4283-4
+%C Xi'an, China
+%P 29-36
+%D 2016
+%R 10.1145/2899007.2899012
+%I ACM
+
+%0 Conference Paper
+%1 3209391
+%A Lingjun Fan
+%A J. Ramon Gil-Garcia
+%A Derek Werthmuller
+%A G Brian Burke
+%A Xuehai Hong 
+%T Investigating blockchain as a data management tool for IoT devices in smart city initiatives
+%B Proceedings of the 19th Annual International Conference on Digital Government Research: Governance in the Data Age
+%@ 978-1-4503-6526-0
+%C Delft, The Netherlands
+%P 1-2
+%D 2018
+%R 10.1145/3209281.3209391
+%I ACM
+
+%0 Conference Paper
+%1 3018901
+%A Aafaf Ouaddah
+%A Anas Abou Elkalam
+%A Abdellah Ait Ouahman 
+%T Harnessing the power of blockchain technology to solve IoT security &#38; privacy issues
+%B Proceedings of the Second International Conference on Internet of things, Data and Cloud Computing
+%@ 978-1-4503-4774-7
+%C Cambridge, United Kingdom
+%P 1-10
+%D 2017
+%R 10.1145/3018896.3018901
+%I ACM
+
+%0 Conference Paper
+%1 3180458
+%A Chethana Dukkipati
+%A Yunpeng Zhang
+%A Liang Chieh Cheng 
+%T Decentralized, BlockChain Based Access Control Framework for the Heterogeneous Internet of Things
+%B Proceedings of the Third ACM Workshop on Attribute-Based Access Control
+%@ 978-1-4503-5633-6
+%C Tempe, AZ, USA
+%P 61-69
+%D 2018
+%R 10.1145/3180457.3180458
+%I ACM
+
+%0 Conference Paper
+%1 3120472
+%A Simona Ibba
+%A Andrea Pinna
+%A Matteo Seu
+%A Filippo Eros Pani 
+%T CitySense: blockchain-oriented smart cities
+%B Proceedings of the XP2017 Scientific Workshops
+%@ 978-1-4503-5264-2
+%C Cologne, Germany
+%P 1-5
+%D 2017
+%R 10.1145/3120459.3120472
+%I ACM
+
+%0 Conference Paper
+%1 3275450
+%A Kolbeinn Karlsson
+%A Danny Adams
+%A Gloire Rubambiza
+%A Zangyueyang Xian
+%A Robbert van Renesse
+%A Hakim Weatherspoon
+%A Stephen Wicker 
+%T Untethered: Deployable Blockchains for IoT Environments
+%B Proceedings of the ACM Symposium on Cloud Computing
+%@ 978-1-4503-6011-1
+%C Carlsbad, CA, USA
+%P 508-508
+%D 2018
+%R 10.1145/3267809.3275450
+%I ACM
+
+%0 Conference Paper
+%1 3211946
+%A Uzair Javaid
+%A Ang Kiang Siang
+%A Muhammad Naveed Aman
+%A Biplab Sikdar 
+%T Mitigating loT Device based DDoS Attacks using Blockchain
+%B Proceedings of the 1st Workshop on Cryptocurrencies and Blockchains for Distributed Systems
+%@ 978-1-4503-5838-5
+%C Munich, Germany
+%P 71-76
+%D 2018
+%R 10.1145/3211933.3211946
+%I ACM
+
+%0 Conference Paper
+%1 3180470
+%A Jianli Pan
+%A Zhicheng Yang 
+%T Cybersecurity Challenges and Opportunities in the New "Edge Computing + IoT" World
+%B Proceedings of the 2018 ACM International Workshop on Security in Software Defined Networks & Network Function Virtualization
+%@ 978-1-4503-5635-0
+%C Tempe, AZ, USA
+%P 29-32
+%D 2018
+%R 10.1145/3180465.3180470
+%I ACM
+
+%0 Conference Paper
+%1 3131562
+%A Aron Laszka
+%A Abhishek Dubey
+%A Michael Walker
+%A Doug Schmidt 
+%T Providing privacy, safety, and security in IoT-based transactive energy systems using distributed ledgers
+%B Proceedings of the Seventh International Conference on the Internet of Things
+%@ 978-1-4503-5318-2
+%C Linz, Austria
+%P 1-8
+%D 2017
+%R 10.1145/3131542.3131562
+%I ACM
+
+%0 Conference Paper
+%1 3265692
+%A Jun Lin
+%A Zhiqi Shen
+%A Anting Zhang
+%A Yueting Chai 
+%T Blockchain and IoT based Food Traceability for Smart Agriculture
+%B Proceedings of the 3rd International Conference on Crowd Science and Engineering
+%@ 978-1-4503-6587-1
+%C Singapore, Singapore
+%P 1-6
+%D 2018
+%R 10.1145/3265689.3265692
+%I ACM
+
+%0 Conference Paper
+%1 3178301
+%A Ahmed Abdullah Ali
+%A Iman A. El-Dessouky
+%A Mahmoud M. Abdallah
+%A Azza K. Nabih 
+%T The Quest for Fully Smart Autonomous Business Networks in IoT Platforms
+%B Proceedings of the 3rd Africa and Middle East Conference on Software Engineering
+%@ 978-1-4503-5512-4
+%C Cairo, Egypt
+%P 13-18
+%D 2017
+%R 10.1145/3178298.3178301
+%I ACM
+
+%0 Conference Paper
+%1 3240136
+%A Anas Abou El Kalam
+%A Aissam Outchakoucht
+%A Hamza Es-Samaali 
+%T Emergence-Based Access Control: New Approach to Secure the Internet of Things
+%B Proceedings of the 1st International Conference on Digital Tools & Uses Congress
+%@ 978-1-4503-6451-5
+%C Paris, France
+%P 1-11
+%D 2018
+%R 10.1145/3240117.3240136
+%I ACM
+
+%0 Conference Paper
+%1 3055256
+%A Davor Svetinovic 
+%T Blockchain Engineering for the Internet of Things: Systems Security Perspective
+%B Proceedings of the 3rd ACM International Workshop on IoT Privacy, Trust, and Security
+%@ 978-1-4503-4969-7
+%C Abu Dhabi, United Arab Emirates
+%P 1-1
+%D 2017
+%R 10.1145/3055245.3055256
+%I ACM
+
+%0 Conference Paper
+%1 3205993
+%A Roberto Di Pietro
+%A Xavier Salleras
+%A Matteo Signorini
+%A Erez Waisbard 
+%T A blockchain-based Trust System for the Internet of Things
+%B Proceedings of the 23nd ACM on Symposium on Access Control Models and Technologies
+%@ 978-1-4503-5666-4
+%C Indianapolis, Indiana, USA
+%P 77-83
+%D 2018
+%R 10.1145/3205977.3205993
+%I ACM
+
+%0 Conference Paper
+%1 3205822
+%A Jorge Guerra Guerra
+%A Felix Armando Fermin Perez 
+%T Inclusion of blockchain in course of distributed systems at the school of computer science
+%B Proceedings of the 23rd Annual ACM Conference on Innovation and Technology in Computer Science Education
+%@ 978-1-4503-5707-4
+%C Larnaca, Cyprus
+%P 390-390
+%D 2018
+%R 10.1145/3197091.3205822
+%I ACM
+
+%0 Conference Paper
+%1 2998465
+%A Andreas Bogner
+%A Mathieu Chanson
+%A Arne Meeuw 
+%T A Decentralised Sharing App running a Smart Contract on the Ethereum Blockchain
+%B Proceedings of the 6th International Conference on the Internet of Things
+%@ 978-1-4503-4814-0
+%C Stuttgart, Germany
+%P 177-178
+%D 2016
+%R 10.1145/2991561.2998465
+%I ACM
+
+%0 Conference Paper
+%1 3209917
+%A Jun Woo Jeong
+%A Bo Youn Kim
+%A Ju Wook Jang 
+%T Security and Device Control Method for Fog Computer using Blockchain
+%B Proceedings of the 2018 International Conference on Information Science and System
+%@ 978-1-4503-6421-8
+%C Jeju, Republic of Korea
+%P 234-238
+%D 2018
+%R 10.1145/3209914.3209917
+%I ACM
+
+%0 Conference Paper
+%1 3090392
+%A H. Kamdem Fezeu
+%A T. Djotio
+%A R. Oulad Haj Thami 
+%T Safe and Irrefutable Decentralized Communication: Bringing Non-Repudiation to Mesh Networks
+%B Proceedings of the 2nd international Conference on Big Data, Cloud and Applications
+%@ 978-1-4503-4852-2
+%C Tetouan, Morocco
+%P 1-6
+%D 2017
+%R 10.1145/3090354.3090392
+%I ACM
+
+%0 Conference Paper
+%1 3131564
+%A Paolo Missier
+%A Shaimaa Bajoudah
+%A Angelo Capossele
+%A Andrea Gaglione
+%A Michele Nati 
+%T Mind my value: a decentralized infrastructure for fair and trusted IoT data trading
+%B Proceedings of the Seventh International Conference on the Internet of Things
+%@ 978-1-4503-5318-2
+%C Linz, Austria
+%P 1-8
+%D 2017
+%R 10.1145/3131542.3131564
+%I ACM
+
+%0 Conference Paper
+%1 3158384
+%A N&#233;stor &#193;lvarez-D&#237;az
+%A Jordi Herrera-Joancomart&#237;
+%A Pino Caballero-Gil 
+%T Smart contracts based on blockchain for logistics management
+%B Proceedings of the 1st International Conference on Internet of Things and Machine Learning
+%@ 978-1-4503-5243-7
+%C Liverpool, United Kingdom
+%P 1-8
+%D 2017
+%R 10.1145/3109761.3158384
+%I ACM
+
+%0 Conference Paper
+%1 3241853
+%A Diego M. Mendez Mena
+%A Baijian Yang 
+%T Blockchain-Based Whitelisting for Consumer IoT Devices and Home Networks
+%B Proceedings of the 19th Annual SIG Conference on Information Technology Education
+%@ 978-1-4503-5954-2
+%C Fort Lauderdale, Florida, USA
+%P 7-12
+%D 2018
+%R 10.1145/3241815.3241853
+%I International World Wide Web Conferences Steering Committee
+
+%0 Conference Paper
+%1 3144733
+%A Fabio Angeletti
+%A Ioannis Chatzigiannakis
+%A Andrea Vitaletti 
+%T Privacy preserving data management in recruiting participants for digital clinical trials
+%B Proceedings of the First International Workshop on Human-centered Sensing, Networking, and Systems
+%@ 978-1-4503-5480-6
+%C Delft, Netherlands
+%P 7-12
+%D 2017
+%R 10.1145/3144730.3144733
+%I ACM
+
+%0 Conference Paper
+%1 3120897
+%A Yuma Sakakibara
+%A Kohei Nakamura
+%A Hiroki Matsutani 
+%T An FPGA NIC Based Hardware Caching for Blockchain
+%B Proceedings of the 8th International Symposium on Highly Efficient Accelerators and Reconfigurable Technologies
+%@ 978-1-4503-5316-8
+%C Bochum, Germany
+%P 1-6
+%D 2017
+%R 10.1145/3120895.3120897
+%I ACM
+
+%0 Conference Paper
+%1 3240137
+%A Samuel Szoniecky 
+%T Blockchain et Intelligence Collective pour le Design des Connaissances de l'Internet des Objets: Mod&eacute;lisation du pouvoir d'agir des objets connect&eacute;s
+%B Proceedings of the 1st International Conference on Digital Tools & Uses Congress
+%@ 978-1-4503-6451-5
+%C Paris, France
+%P 1-6
+%D 2018
+%R 10.1145/3240117.3240137
+%I ACM
+
+%0 Conference Paper
+%1 3226062
+%A Ioannis Psaras 
+%T Decentralised Edge-Computing and IoT through Distributed Trust
+%B Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services
+%@ 978-1-4503-5720-3
+%C Munich, Germany
+%P 505-507
+%D 2018
+%R 10.1145/3210240.3226062
+%I ACM
+
+%0 Conference Paper
+%1 3152829
+%A Wilson S. Melo, Jr
+%A Alysson Bessani
+%A Luiz F. R. C. Carmo 
+%T How blockchains can help legal metrology
+%B Proceedings of the 1st Workshop on Scalable and Resilient Infrastructures for Distributed Ledgers
+%@ 978-1-4503-5173-7
+%C Las Vegas, Nevada
+%P 1-2
+%D 2017
+%R 10.1145/3152824.3152829
+%I ACM
+
+%0 Conference Paper
+%1 3209916
+%A Bo Youn Kim
+%A Seong Seok Choi
+%A Ju Wook Jang 
+%T Data Managing and Service Exchanging on IoT Service Platform Based on Blockchain with Smart Contract and Spatial Data Processing
+%B Proceedings of the 2018 International Conference on Information Science and System
+%@ 978-1-4503-6421-8
+%C Jeju, Republic of Korea
+%P 59-63
+%D 2018
+%R 10.1145/3209914.3209916
+%I ACM
+
+%0 Conference Paper
+%1 3194150
+%A Peter E. Sedgewick
+%A Rog&#233;rio de Lemos 
+%T Self-adaptation made easy with blockchains
+%B Proceedings of the 13th International Conference on Software Engineering for Adaptive and Self-Managing Systems
+%@ 978-1-4503-5715-9
+%C Gothenburg, Sweden
+%P 192-193
+%D 2018
+%R 10.1145/3194133.3194150
+%I ACM
+
+%0 Journal Article
+%1 3087913
+%E Sandeep K. Shukla 
+%T Editorial: Cyber Security, IoT, Block Chains&mdash;Risks and Opportunities
+%J ACM Trans. Embed. Comput. Syst.
+%@ 1539-9087
+%V 16
+%N 3
+%P 1-2
+%D 2017
+%R 10.1145/3087913
+%I ACM
+
+%0 Conference Paper
+%1 3098983
+%A Francesco Buccafurri
+%A Gianluca Lax
+%A Serena Nicolazzo
+%A Antonino Nocera 
+%T Overcoming Limits of Blockchain for IoT Applications
+%B Proceedings of the 12th International Conference on Availability, Reliability and Security
+%@ 978-1-4503-5257-4
+%C Reggio Calabria, Italy
+%P 1-6
+%D 2017
+%R 10.1145/3098954.3098983
+%I ACM
+
+%0 Conference Paper
+%1 3209436
+%A Jong Sou Park
+%A Young Sik Kim
+%A Chang-hak Choi
+%A JangSup Shim 
+%T How to Define Value on Data under Blockchain Driven Open Data System for E-Government
+%B Proceedings of the 11th International Conference on Theory and Practice of Electronic Governance
+%@ 978-1-4503-5421-9
+%C Galway, Ireland
+%P 670-672
+%D 2018
+%R 10.1145/3209415.3209436
+%I ACM
+
+%0 Conference Paper
+%1 3055527
+%A Lei Xu
+%A Nolan Shah
+%A Lin Chen
+%A Nour Diallo
+%A Zhimin Gao
+%A Yang Lu
+%A Weidong Shi 
+%T Enabling the Sharing Economy: Privacy Respecting Contract based on Public Blockchain
+%B Proceedings of the ACM Workshop on Blockchain, Cryptocurrencies and Contracts
+%@ 978-1-4503-4974-1
+%C Abu Dhabi, United Arab Emirates
+%P 15-21
+%D 2017
+%R 10.1145/3055518.3055527
+%I ACM
+
+%0 Conference Paper
+%1 3240298
+%A Partha Chakraborty
+%A Rifat Shahriyar
+%A Anindya Iqbal
+%A Amiangshu Bosu 
+%T Understanding the software development practices of blockchain projects: a survey
+%B Proceedings of the 12th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement
+%@ 978-1-4503-5823-1
+%C Oulu, Finland
+%P 1-10
+%D 2018
+%R 10.1145/3239235.3240298
+%I ACM
+
+%0 Conference Paper
+%1 3152825
+%A Lei Xu
+%A Lin Chen
+%A Zhimin Gao
+%A Shouhuai Xu
+%A Weidong Shi 
+%T EPBC: &lt;u&gt;E&lt;/u&gt;fficient &lt;u&gt;P&lt;/u&gt;ublic &lt;u&gt;B&lt;/u&gt;lockchain &lt;u&gt;C&lt;/u&gt;lient for lightweight users
+%B Proceedings of the 1st Workshop on Scalable and Resilient Infrastructures for Distributed Ledgers
+%@ 978-1-4503-5173-7
+%C Las Vegas, Nevada
+%P 1-6
+%D 2017
+%R 10.1145/3152824.3152825
+%I ACM
+
+%0 Conference Paper
+%1 3125628
+%A Kaz&#305;m R&#305;fat &#214;zy&#305;lmaz
+%A Arda Yurdakul 
+%T Integrating low-power IoT devices to a blockchain-based infrastructure: work-in-progress
+%B Proceedings of the Thirteenth ACM International Conference on Embedded Software 2017 Companion
+%@ 978-1-4503-5186-7
+%C Seoul, Republic of Korea
+%P 1-2
+%D 2017
+%R 10.1145/3125503.3125628
+%I ACM
+
+%0 Conference Paper
+%1 3016027
+%A Mayra Samaniego
+%A Ralph Deters 
+%T Using Blockchain to push Software-Defined IoT Components onto Edge Hosts
+%B Proceedings of the International Conference on Big Data and Advanced Wireless Technologies
+%@ 978-1-4503-4779-2
+%C Blagoevgrad, Bulgaria
+%P 1-9
+%D 2016
+%R 10.1145/3010089.3016027
+%I ACM
+
+%0 Conference Paper
+%1 3140656
+%A Hossein Shafagh
+%A Lukas Burkhalter
+%A Anwar Hithnawi
+%A Simon Duquennoy 
+%T Towards Blockchain-based Auditable Storage and Sharing of IoT Data
+%B Proceedings of the 2017 on Cloud Computing Security Workshop
+%@ 978-1-4503-5204-8
+%C Dallas, Texas, USA
+%P 45-50
+%D 2017
+%R 10.1145/3140649.3140656
+%I ACM
+
+%0 Conference Proceedings 
+%1 3205230
+%Z Program Chair - Satya Lokam
+%Z Program Chair - Sushmita Ruj
+%Z Program Chair - Kouichi Sakurai
+%T Proceedings of the 2nd ACM Workshop on Blockchains, Cryptocurrencies, and Contracts
+%D 2018
+%@ 978-1-4503-5758-6
+%P 64
+%C Incheon, Republic of Korea
+%I ACM
+
+%0 Conference Proceedings 
+%1 3055518
+%Z Program Chair - Satya Lokam
+%Z Program Chair - Sushmita Ruj
+%Z Program Chair - Kouichi Sakurai
+%T Proceedings of the ACM Workshop on Blockchain, Cryptocurrencies and Contracts
+%D 2017
+%@ 978-1-4503-4974-1
+%P 42
+%C Abu Dhabi, United Arab Emirates
+%I ACM
+
+%0 Conference Proceedings 
+%1 3055245
+%Z Program Chair - Richard Chow
+%Z Program Chair - Gokay Saldamli
+%T Proceedings of the 3rd ACM International Workshop on IoT Privacy, Trust, and Security
+%D 2017
+%@ 978-1-4503-4969-7
+%P 40
+%C Abu Dhabi, United Arab Emirates
+%I ACM
+
+%0 Conference Paper
+%1 3229569
+%A Nikolaos Alexopoulos
+%A Sheikh Mahbub Habib
+%A Max M&#252;hlh&#228;user 
+%T Towards Secure Distributed Trust Management on a Global Scale: An analytical approach for applying Distributed Ledgers for authorization in the IoT
+%B Proceedings of the 2018 Workshop on IoT Security and Privacy
+%@ 978-1-4503-5905-4
+%C Budapest, Hungary
+%P 49-54
+%D 2018
+%R 10.1145/3229565.3229569
+%I ACM
+
+%0 Conference Paper
+%1 3283551
+%A Sibin Mohan
+%A Mikael Asplund
+%A Gedare Bloom
+%A Ahmad-Reza Sadeghi
+%A Ahmad Ibrahim
+%A Negin Salajageh
+%A Paul Griffioen
+%A Bruno Sinopoli 
+%T The future of IoT security: special session
+%B Proceedings of the International Conference on Embedded Software
+%@ 978-1-5386-5564-1
+%C Turin, Italy
+%P 1-7
+%D 2018
+%I IEEE Press
+
+%0 Conference Paper
+%1 3278166
+%A Aaron Yi Ding
+%A Marijn Janssen 
+%T Opportunities for applications using 5G networks: requirements, challenges, and outlook
+%B Proceedings of the Seventh International Conference on Telecommunications and Remote Sensing
+%@ 978-1-4503-6580-2
+%C Barcelona, Spain
+%P 27-34
+%D 2018
+%R 10.1145/3278161.3278166
+%I ACM
+
+%0 Conference Paper
+%1 3049937
+%A Stephen Perelgut
+%A Colette Lacroix 
+%T Hands-on: implement your first blockchain solution
+%B Proceedings of the 26th Annual International Conference on Computer Science and Software Engineering
+%C Toronto, Ontario, Canada
+%P 350-350
+%D 2016
+%I IBM Corp.
+
+%0 Conference Paper
+%1 3016029
+%A Ajay Kumar Shrestha
+%A Julita Vassileva 
+%T Towards decentralized data storage in general cloud platform for meta-products
+%B Proceedings of the International Conference on Big Data and Advanced Wireless Technologies
+%@ 978-1-4503-4779-2
+%C Blagoevgrad, Bulgaria
+%P 1-7
+%D 2016
+%R 10.1145/3010089.3016029
+%I ACM
+
+%0 Conference Proceedings 
+%1 3264437
+%Z Program Chair - Philipp Reinecke
+%Z Conference Chair - Pete Burnap
+%Z Program Chair - Naghmeh Moradpoor
+%Z Conference Chair - Atilla El�i
+%Z Program Chair - George Theodorakopoulos
+%Z Conference Chair - Omer Rana
+%Z Program Chair - Koray Karabina
+%T Proceedings of the 11th International Conference on Security of Information and Networks
+%D 2018
+%@ 978-1-4503-6608-3
+%P 148
+%C Cardiff, United Kingdom
+%I ACM
+
+%0 Conference Paper
+%1 3267499
+%A Jianping Zhu
+%A Wei Song
+%A Ziyuan Zhu
+%A Jiameng Ying
+%A Boya Li
+%A Bibo Tu
+%A Gang Shi
+%A Rui Hou
+%A Dan Meng 
+%T CPU Security Benchmark
+%B Proceedings of the 1st Workshop on Security-Oriented Designs of Computer Architectures and Processors
+%@ 978-1-4503-5991-7
+%C Toronto, Canada
+%P 8-14
+%D 2018
+%R 10.1145/3267494.3267499
+%I ACM
+
+%0 Conference Proceedings 
+%1 3243734
+%Z General Chair - David Lie
+%Z General Chair - Mohammad Mannan
+%Z Program Chair - Michael Backes
+%Z Program Chair - XiaoFeng Wang
+%T Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security
+%D 2018
+%@ 978-1-4503-5693-0
+%P 2185
+%C Toronto, Canada
+%I ACM
+
+%0 Conference Proceedings 
+%1 3052973
+%Z General Chair - Ramesh Karri
+%Z General Chair - Ozgur Sinanoglu
+%Z Program Chair - Ahmad-Reza Sadeghi
+%Z Program Chair - Xun Yi
+%T Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security
+%D 2017
+%@ 978-1-4503-4944-4
+%P 932
+%C Abu Dhabi, United Arab Emirates
+%I ACM
+

@@ -1,0 +1,15 @@
+# Notable Rejections
+
+## Round 1 - Abstract and Title
+
+- In this paper, we discussed an efficient statistical method with proof-of-work consensus approach for cloud and fog computing.
+- This paper aims to fix the gap. Inspired by Chainspace, a blockchain platform which could be applicable in IoT, VChain is proposed, a novel blockchain scheme suitable for IoT which is more secure, concrete, and practical compared with Chainspace.
+- This problem will gain even more relevance in the future, as blockchain technology is applied to new domains such as the Internet of Things (IoT) that necessitate the use of thin clients. We address this emerging problem by proposing a novel compressible blockchain architecture. 
+- In this paper, we propose a blockchain system for e-learning assessment and certification, which includes an entirely new network structure on the basis of the combination of the public and private blockchains, as well as four specific smart contract schemes for the realization of the e-learning assessment and credit exchange, the digital certificate issuance and secure storage, the digital certificate verification and the e-learning voucher allocation, respectively.
+- The paper shows different case studies where the benefits of applying blockchain technology in supply chain management are appealing that has shown many benefits. It highlights the cases that have reduced fraud and errors; mitigate risks and provide data transparency and privacy, etc. 
+- With this in mind, the overall goal of our research is to design a lightweight scalable blockchain framework for IoT of mobile devices. This framework, coined as 'Sensor-Chain', promises a new generation of lightweight blockchain management with a superior reduction in resource consumption, and at the same time capable of retaining critical information about the IoT systems of mobile devices.
+- On the other hand, full nodes should synchronize massive block data and deal with numerous transactions in peer-to-peer network, whose occupation of storage capacity and bandwidth makes IIoT devices difficult to afford. In this paper, we propose a lightweight blockchain system called LightChain, which is resource-efficient and suitable for power-constrained IIoT scenarios.
+- We design a realistic blockchain-based loT architecture, using existing technologies while by taking into consideration the characteristics and limitations of IoT devices and applications.
+-  To address those issues, this paper introduces a Lightweight Blockchain based Cybersecurity (LBC) for IoT environments.
+- Vendor-managed inventory (VMI) is a widely used collaborative inventory management policy in which manufacturers/vendors manage the inventory of retailers and take responsibility for making decisions related to the timing and extent of inventory replenishment.
+- 
