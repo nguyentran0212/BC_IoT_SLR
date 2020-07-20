@@ -143,9 +143,99 @@ Migration from the existing version:
 
 
 
+**Deployment Position of BC within IoT system**
+
+- **Cloud:** The nodes of the blockchain network are deployed outside the operation area of IoT devices and their immediate processing nodes. This deployment mode covers the use of Infrastructure-as-a-Service, Blockchain-as-a-Service, as well as the use of existing public blockchain infrastructures. 
+- **Fog:** The nodes of the blockchain network are deployed on computing nodes that locate in the operation area of IoT devices, but at least one network hop away from the devices at the edge. 
+- **Edge:** The nodes of the blockchain network are deployed directly on the IoT devices at the edge of the network, which handle sensing and actuation. 
+- **Cloud-Full -- Edge-LW:** The deployed blockchain network utilizes both full and lightweight nodes. The full nodes are deployed on the cloud and might belong to a public blockchain network. The lightweight nodes are deployed on devices at the edge. 
+- **Cloud-Full -- Fog-LW:** The deployed blockchain network utilizes both full and lightweight nodes. The full nodes are deployed on the cloud and might belong to a public blockchain network. The lightweight nodes are deployed on fog nodes.
+- **Fog-Full -- Edge-LW:**  The deployed blockchain network utilizes both full and lightweight nodes. The full nodes are deployed on fog nodes. The lightweight nodes are deployed on devices at the edge.
+- **Cloud & Fog:** This mode of deployment consists of at least two blockchain networks. One follows the cloud-based deployment, the others are fog-based.
+- **Cloud & Edge:** This mode of deployment consists of at least two blockchain networks. One follows the cloud-based deployment, the others are edge-based.
+- **Fog & Edge:** This mode of deployment consists of at least two blockchain networks. One follows the fog-based deployment, the others are edge-based.
+
 ### How do IoT systems offload to BC?
 
+Existing on-chain data:
 
+- Authentication records => Keep as is. 
+- Authorization policies => Access Control Policies
+- Authorization requests and responses => Authorization records
+- Trust ratings => Reputation and Trust Ratings
+- Commands to Devices => Instructions for Devices
+- Sensor Reading Hashes => Sensor Data Hashes
+- Current Time => Keep as is. 
+- Data Placement Record => Data Indexes
+- Resource Exchange Record => Keep as is. 
+- Device Description and Identity => Keep as is. 
+- Device Interaction Record => Keep as is.
+- Service Interaction Record => Keep as is. 
+- Sensor Readings => Sensor Data
+- Firmware Hash (and Binary) => <u>Binary of Updates OR Hash of Updates</u>
+- Processing Placement Records => Keep as is
+- SDN Flow Tables => Keep as is. 
+- Service Descriptions => Keep as is. 
+- Whitelisted / Blacklisted IP addresses => Access Control Policies
+- Security Incident Reports => Security Incident Records
+
+**On-chain Data:**
+
+- **Access Control Policies:** Policies governing the access to devices, data, and services of IoT systems, such role-based policies, attribute-based policies, and lists of allowed and forbidden IP addresses. 
+- **Authorization Records**: Records of requests for access and responses by the access control management component. 
+- **Authentication Records**: Records of requests for authentication and responses by the authentication management component. 
+- **Reputation and Trust Ratings**: Records of reputation or trust scores of devices and services participating in IoT systems. 
+- **Instructions for Devices**: Commands for IoT devices, such as flight plans and service invocations. 
+- **Sensor Data**: Data and events collected by IoT devices. 
+- **Sensor Data Hashes**: Digests of data collected by IoT devices, which can be used as proof-of-existence or pointers to off-chain data packets. 
+- **Current Time**: Time stamps provided by a trusted time source. 
+- **Data Indexes:** Pointers to off-chain data packets. 
+- **Resource Exchange Records:** Records of business interactions and exchanges between machines and users of IoT systems. 
+- **Device Description and Identity**: Records of identities, identifying features, and other descriptions of IoT devices, such as origin, configurations, hashes of their software agents, and whitelisted software. 
+- **Device Interaction Records**: Records of interactions with devices in IoT systems.
+- **Service Interaction Records**: Records of IoT systems invoking external services or of external parties invoking services offered by the systems. 
+- **Binary of Updates:** Binaries of software updates for IoT devices issued by their manufacturers.
+- **Hashes of Updates:** Digests of software updates for proof-of-existence and integrity guarantee purpose.
+- **Processing Placement Records**: Records of the offloading of computational tasks from devices to fog nodes or cloud services. 
+- **SDN Flow Tables:** Flow tables for OpenFlow Switches in a software defined network. 
+- **Service Description**: Metadata and descriptions of services offered or consumed by IoT systems. 
+- **Security Incident Records**: Records of security incidents in an IoT system, such as failed authentications and unauthorized accesses. 
+
+
+
+Existing on-chain logic:
+
+- Authorization Mechanism => Access control
+- Contract between resource providers and consumers => Resource exchange contracts
+- Data index maintainence => Keep as is. 
+- Business process => <u>Resource exchange contracts OR Workflow Orchestration</u>
+- Command integrity check => Integrity Checking
+- Device integrity check => Integrity Checking
+- Multi-party computation protocol => Workflow Orchestration
+- Service matchmaking mechanism => Service Matching
+- Digital-twins => Keep as it. 
+- Event Detection mechanism => Event Detection
+- Firewall update mechanism => Access control
+- Fund distribution mechanism => Resource exchange contracts
+- Matchmaking mechanism => Service Matching
+- Publish-subscribe protocol => Keep as is. 
+- Reputation score calculation => Keep as is. 
+
+**On-chain logic:**
+
+- **Access control:** Assess incoming requests against existing policies, grant and manage access tokens, and update access policies. 
+- **Identity Management**: Update and manage the identity information of devices and services of IoT systems. 
+- **Authentication**: Assess the incoming identity claims against the existing identifying records.  
+- **Resource exchange contracts:** Specify and enforce terms, conditions, and agreements between users and machines of IoT systems that engage in resource exchanges, such as buying renewable energy, renting devices, compensating for software updates distribution, and distributing funds to machine's account. These contracts govern the change of ownership of assets recorded in the blockchain. 
+- **Data Index Maintenance:** update and maintain indexes of data packets stored off-chain. 
+- **Workflow Orchestration:** control the activities of devices and services within or across IoT systems to carry out predefined workflow, such as a multi-party computation protocol or DDoS detection schemes. 
+- **Service Matching**: Matching requests with the existing services offered or consumed by IoT systems. 
+- **Integrity Checking**: Verify the integrity of the input data, such as device instructions and configurations, against the existing records on-chain. 
+- **Digital-twins:** Maintain digital representatives of IoT devices, govern and update the state of devices based on incoming transactions. 
+- **Event Detection**: Detect events, such as violations of service level agreements, based on the incoming sensing data. 
+- **Publish-Subscribe Protocol:** Maintain a list of topics that users can subscribe to, and add messages to those topics based on incoming transactions. 
+- **Reputation Score Calculation**: Calculate and update the reputation of trust ratings of devices and services of IoT systems based on their behaviours and assessment of their peers. 
+- **QoS Calculation**: Calculate quality metrics of industrial services based on the data reported by IoT sensors and submitted to the blockchain. 
 
 ### What are the configurations of the integrated BC?
 
